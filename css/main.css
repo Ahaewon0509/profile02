@@ -4,6 +4,31 @@ body{
     /* font-size: 1em;
     color: rgb(45, 45, 45); */
 }
+/*메인 배너 부분*/
+header{
+    position: relative;
+    /* top: 0;
+    left: 0; */
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #a6d900 0%, #ff4454 100%);
+    opacity: 0.5;
+    animation: huerotator 6s infinite alternate;
+}
+@keyframes huerotator {
+    0% {
+    -webkit-filter: hue-rotate(0deg);
+    filter: hue-rotate(0deg);
+}
+
+100% {
+    -webkit-filter: hue-rotate(360deg);
+    filter: hue-rotate(360deg);
+}
+}
+
+
+
 
 /*메인 제목 부분*/
 .logoDi {
@@ -13,17 +38,17 @@ body{
 }
 .logoDi h2{ 
 	color: #fff;
-	font-size: 8em;
+	font-size: 6em;
 	/* position: absolute; */
 	/* transform: translate(-50%, -50%); */
 }
-/* .logoDi .titGroup02 {
-	color: #fff;git
-	font-size: 8em;
-	position: absolute;
-	transform: translate(-50%, -50%);
-} */
-
+.intro-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(25%, 110%);
+    width: 45%;
+}
 
 .titGroup01 h2{
     color: #c19bf5;
@@ -35,14 +60,14 @@ body{
 	color: transparent;
 	-webkit-text-stroke: 2px #8338ec;
 	position: absolute;
-	transform: translate(-50%, -50%);
-
+	transform: translate(1%, -7%);
+    z-index: 99;
 }
 .titGroup03 h2:nth-child(2){
 	color: #c19bf5;
 	animation: animate 4s ease-in-out infinite;
 	position: absolute;
-	transform: translate(-50%, -50%);
+	transform: translate(1%, -7%);
 }
 /* .logoDi h2:nth-child(1) {
 	color: transparent;
@@ -83,6 +108,109 @@ body{
 			0% 100%
 		);
 	}
+}
+
+/*스크롤 다운 버튼*/
+
+.scrollbtn a {
+	position: absolute;
+	bottom: -22px;
+	left: 50%;
+	z-index: 2;
+	display: inline-block;
+	-webkit-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+	text-decoration: none;
+}
+
+.scrollbtn a {
+	padding-top: 60px;
+}
+.scrollbtn a span {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 30px;
+	height: 50px;
+	margin-left: -15px;
+	border: 2px solid #fff;
+	border-radius: 50px;
+	box-sizing: border-box;
+}
+    
+.scrollbtn a span::before {
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	content: '';
+	width: 6px;
+	height: 6px;
+	margin-left: -3px;
+	background-color: #fff;
+	border-radius: 100%;
+	-webkit-animation: sdb 2s infinite;
+	animation: sdb 2s infinite;
+	box-sizing: border-box;
+}
+
+@-webkit-keyframes sdb {
+	0% {
+		-webkit-transform: translate(0, 0);
+		opacity: 0;
+	}
+	40% {
+		opacity: 1;
+	}
+	80% {
+		-webkit-transform: translate(0, 20px);
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@keyframes sdb {
+	0% {
+		transform: translate(0, 0);
+		opacity: 0;
+	}
+	40% {
+		opacity: 1;
+	}
+	80% {
+		transform: translate(0, 20px);
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}  
+
+/*스크롤 부분*/
+
+svg{
+    display: block;
+    width: 89%;
+    height: 200px;
+    letter-spacing: 0.2em;
+    position: absolute;
+    top: 23%;
+    left: -33%;
+}
+text {
+    transform-origin: 50% 50%;
+    animation: rotate 10s linear infinite;
+}
+
+
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
 }
 
 

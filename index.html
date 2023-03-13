@@ -51,6 +51,7 @@
     <!-- index.html 스타일시트 -->
     <link rel="stylesheet" href="./css/main.css" type="text/css"> 
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
+    <script src="./js/main.js"></script>
     <!-- IE8 support for HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -103,29 +104,46 @@
     </nav>
 
     <!-- Header -->
-    <header style="background-image: url('img/agency/backgrounds/blurry-g2e8f865eb_1920.jpg');">
-        <div class="intro-content">
-            <!-- <img src="img/agency/profile.svg" class="img-responsive img-centered" alt=""> -->
-            <div class="logoDi">
-                <div class="titGroup01">
-                    <h2>만나서</h2>
-                </div>
-                <div class="titGroup02">
-                    <h2>반갑습니다</h2>
-                </div>
-                <div class="titGroup03">
-                    <h2>안혜원입니다</h2>
-                    <h2>안혜원입니다</h2>
-                </div>
+    <header></header> <!--style="background-image: url('img/agency/backgrounds/blurry-g2e8f865eb_1920.jpg');"-->
+    <div class="circle">
+        <svg viewBox="0 0 150 150">
+            <path 
+                id="curve" 
+                fill="transparent" 
+                d="M 75 75 m -50, 0 a 50, 50 0 1, 1 100, 0 a 50, 50 0 1, 1 -100, 0"
+            />
+            <text>
+                <textPath xlink:href="#curve">
+                    *WELCOME*TO*MY*PORTFOLIO*
+                </textPath>
+            </text>
+        </svg>
+    </div>
+
+    <div class="intro-content">
+        <!-- <img src="img/agency/profile.svg" class="img-responsive img-centered" alt=""> -->
+        <div class="logoDi">
+            <div class="titGroup01">
+                <h2>만나서</h2>
             </div>
-            <!-- <div class="brand-name">Vitality</div>
-            <hr class="colored">
-            <div class="brand-name-subtext">by Start Bootstrap</div> -->
+            <div class="titGroup02">
+                <h2>반갑습니다</h2>
+            </div>
+            <div class="titGroup03">
+                <h2>안혜원입니다</h2>
+                <h2>안혜원입니다</h2>
+            </div>
         </div>
-        <div class="scroll-down">
-            <a class="btn page-scroll" href="#about"><i class="fa fa-angle-down fa-fw"></i></a>
+        <!-- <div class="brand-name">Vitality</div>
+        <hr class="colored">
+        <div class="brand-name-subtext">by Start Bootstrap</div> -->
+    </div>
+    <div class="scroll-down">
+        <div class="scrollbtn">
+            <a class="btn page-scroll" href="#about"><span></span>Scroll</a>
         </div>
-    </header>
+    </div>
+
     <!-- About Section -->
     <section id="about">
         <div class="container-fluid">

@@ -1,0 +1,88 @@
+/*가장 기본적인 css들 적는 곳(폰트, 폰트크기, :hover 같은 간단한거 적을 때 하기)*/
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    /* font-size: 1em;
+    color: rgb(45, 45, 45); */
+}
+
+/*메인 제목 부분*/
+.logoDi {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+.logoDi h2{ 
+	color: #fff;
+	font-size: 8em;
+	/* position: absolute; */
+	/* transform: translate(-50%, -50%); */
+}
+/* .logoDi .titGroup02 {
+	color: #fff;git
+	font-size: 8em;
+	position: absolute;
+	transform: translate(-50%, -50%);
+} */
+
+
+.titGroup01 h2{
+    color: #c19bf5;
+}
+.titGroup02 h2{
+    color: #000;
+}
+.titGroup03 h2:nth-child(1){
+	color: transparent;
+	-webkit-text-stroke: 2px #8338ec;
+	position: absolute;
+	transform: translate(-50%, -50%);
+
+}
+.titGroup03 h2:nth-child(2){
+	color: #c19bf5;
+	animation: animate 4s ease-in-out infinite;
+	position: absolute;
+	transform: translate(-50%, -50%);
+}
+/* .logoDi h2:nth-child(1) {
+	color: transparent;
+	-webkit-text-stroke: 2px #8338ec;
+}
+
+.logoDi h2:nth-child(2) {
+	color: #c19bf5;
+	animation: animate 4s ease-in-out infinite;
+} */
+@keyframes animate {
+	0%,
+	100% {
+		clip-path: polygon(
+			0% 45%,
+			16% 44%,
+			33% 50%,
+			54% 60%,
+			70% 61%,
+			84% 59%,
+			100% 52%,
+			100% 100%,
+			0% 100%
+		);
+	}
+
+	50% {
+		clip-path: polygon(
+			0% 60%,
+			15% 65%,
+			34% 66%,
+			51% 62%,
+			67% 50%,
+			84% 45%,
+			100% 46%,
+			100% 100%,
+			0% 100%
+		);
+	}
+}
+
+
+

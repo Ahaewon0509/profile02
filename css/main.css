@@ -27,7 +27,29 @@ header{
 }
 }
 
+/*마우스 따라다니는 아이콘*/
+/* .cursor{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background-color: #ee6c4d;
+	transform: translate(-50%, -50%);
+} */
 
+.cursor{
+	position: fixed;
+	width: 40px; 
+	height: 40px; 
+	border-radius: 50px; 
+	background: transparent;
+	border: 2px dashed #c19bf5;
+	/* transform: translate(20%, 20%); */
+	transition: all 0.6s cubic-bezier(0, 0, 0.2, 1);
+	z-index: 999;
+}
 
 
 /*메인 제목 부분*/
@@ -39,8 +61,8 @@ header{
 .logoDi h2{ 
 	color: #fff;
 	font-size: 6em;
-	/* position: absolute; */
-	/* transform: translate(-50%, -50%); */
+	/* position: absolute;
+	transform: translate(-50%, -50%); */
 }
 .intro-content{
     position: absolute;
@@ -51,33 +73,31 @@ header{
 }
 
 .titGroup01 h2{
-    color: #c19bf5;
+    color: #fff;
 }
 .titGroup02 h2{
-    color: #000;
+    color: #c19bf5;
 }
 .titGroup03 h2:nth-child(1){
 	color: transparent;
-	-webkit-text-stroke: 2px #8338ec;
+	-webkit-text-stroke: 2px #fff;
+	/* -webkit-text-stroke: 2px #8338ec; */
 	position: absolute;
 	transform: translate(1%, -7%);
     z-index: 99;
 }
 .titGroup03 h2:nth-child(2){
-	color: #c19bf5;
+	color: #fff;
+	/* color: #c19bf5; */
 	animation: animate 4s ease-in-out infinite;
 	position: absolute;
 	transform: translate(1%, -7%);
 }
-/* .logoDi h2:nth-child(1) {
-	color: transparent;
-	-webkit-text-stroke: 2px #8338ec;
-}
 
 .logoDi h2:nth-child(2) {
 	color: #c19bf5;
-	animation: animate 4s ease-in-out infinite;
-} */
+	animation: animate 3s ease-in-out infinite;
+}
 
 @keyframes animate {
 	0%,
@@ -110,6 +130,229 @@ header{
 	}
 }
 
+
+
+
+
+/* .intro-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* transform: translate(50%, 50%);
+} */
+
+/* @keyframes showTopText {
+	0% { transform: translate3d(0, 100%, 0); }
+	40%, 60% { transform: translate3d(0, 50%, 0); }
+	100% { transform: translate3d(0, 0, 0); }
+}
+@keyframes showBottomText {
+	0% { transform: translate3d(0, -100%, 0); }
+	100% { transform: translate3d(0, 0, 0); }
+}
+.animated-title {
+	color: #000;
+	height: 37vmin;
+	left: 35%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 85vmin;
+}
+.animated-title > div {
+	height: 50%;
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+}
+.animated-title > div div {
+	font-size: 12vmin;
+	padding: 2vmin 0;
+	position: absolute;
+} */
+.animated-title > div div span {
+	/* display: block; */
+}
+.animated-title > div.text-top {
+	/* border-bottom: 1vmin solid transparent; */
+	/* top: 0; */
+}
+/* .animated-title > div.text-top div {
+	animation: showTopText 1s;
+	animation-delay: 0.5s;
+	animation-fill-mode: forwards;
+	/* bottom: 0; */
+	/* transform: translate(0, 100%);
+} */
+/* .animated-title > div.text-top div span{
+	color: #fff;
+	font-size: 0.7em;
+} */
+/* .animated-title > div.text-top div span:nth-child(2) {
+	color: #fff;
+	font-size: 0.8em;
+} */
+/* .animated-title > div.text-bottom {
+	bottom: 0;
+}
+.animated-title > div.text-bottom div {
+	animation: showBottomText 0.5s;
+	animation-delay: 1.75s;
+	animation-fill-mode: forwards;
+	top: 0;
+	transform: translate(0, -100%);
+	font-size: 7em;
+} */
+/*
+h2 {
+	text-align: center;
+	padding: 16px;
+	margin: 0;
+}
+.line {
+	width: 100%;
+	height: 10rem;
+	overflow: hidden;
+	border: 1px solid black;
+	padding: 0;
+	/* margin-bottom: 16px; 
+}
+.lineUp {
+	font-size: 4em;
+	animation: 2s anim-lineUp ease-out infinite;
+}
+@keyframes anim-lineUp {
+0% {
+	opacity: 0;
+	transform: translateY(80%);
+}
+20% {
+	opacity: 0;
+}
+50% {
+	opacity: 1;
+	transform: translateY(0%);
+}
+100% {
+	opacity: 1;
+	transform: translateY(0%);
+}
+} */
+
+/* h2{
+	color: #333;
+	font-family: tahoma;
+	font-size: 3rem;
+	font-weight: 100;
+	line-height: 1.5;
+	text-transform: uppercase;
+	white-space: nowrap;
+	overflow: hidden;
+	position: relative;
+	width: 550px;
+}
+
+h2 span{
+font-size: 40px;
+margin-left: 40px;
+}
+
+.message{
+background-color: yellow;
+color: #333;
+display: block;
+font-weight: 900;
+overflow: hidden;
+position: absolute;
+padding-left: 0.5rem;
+top: 0.2rem;
+left: 270px;
+animation: openclose 5s ease-in-out infinite;
+}
+
+.word1, .word2, .word3{
+font-family: tahoma;
+}
+
+@keyframes openclose{
+0% {
+	top: 0.2rem;
+	width: 0;
+}
+5% {
+	width: 0;
+}
+15% {
+	width: 230px;
+}
+30% {
+	top: 0.2rem;
+	width: 230px;
+}
+33% {
+	top: 0.2rem;
+	width: 0;
+}
+35% {
+	top: 0.2rem;
+	width: 0;
+}
+38% {
+	top: -4.5rem;
+	
+}
+48% {
+	top: -4.5rem;
+	width: 190px;
+}
+62% {
+	top: -4.5rem;
+	width: 190px;
+}
+66% {
+	top: -4.5rem;
+	width: 0;
+	text-indent: 0;
+}
+71% {
+	top: -9rem;
+	width: 0;
+	text-indent: 5px;
+}
+86% {
+	top: -9rem;
+	width: 285px;
+}
+95% {
+	top: -9rem;
+	width: 285px;
+}
+98% {
+	top: -9rem;
+	width: 0;
+	text-indent: 5px;
+}
+100% {
+	top: 0;
+	width: 0;
+	text-indent: 0;
+}
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*스크롤 다운 버튼*/
 
 .scrollbtn a {
@@ -121,10 +364,11 @@ header{
 	-webkit-transform: translate(0, -50%);
 	transform: translate(0, -50%);
 	text-decoration: none;
-}
-
-.scrollbtn a {
 	padding-top: 60px;
+	color: #fff;
+}
+.scrollbtn a:hover{
+	color: #c19bf5;
 }
 .scrollbtn a span {
 	position: absolute;
@@ -190,12 +434,12 @@ header{
 
 svg{
     display: block;
-    width: 89%;
+    width: 12%;
     height: 200px;
     letter-spacing: 0.2em;
     position: absolute;
     top: 23%;
-    left: -33%;
+    left: 6%;
 }
 text {
     transform-origin: 50% 50%;

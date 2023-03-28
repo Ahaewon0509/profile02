@@ -373,3 +373,8 @@ text {
 #cafe .container-fluid{
     width: 1400px;
 }
+#cafe .skillFlex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

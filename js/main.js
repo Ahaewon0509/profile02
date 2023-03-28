@@ -1,15 +1,4 @@
 $(function() {
-    //mouse cursor
-let mouseX
-let mouseY
-const cursor = document.querySelector('#cursor')
-
-document.addEventListener('mousemove', function(e){
-    mouseX = e.clientX
-    mouseY = e.clientY
-    cursor.style.left = mouseX + 'px'
-    cursor.style.top = mouseY + 'px'
-})
 
 // const circle = document.querySelector('.cursor') 
 // console.log(circle)

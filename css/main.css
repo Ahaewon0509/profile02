@@ -143,7 +143,7 @@ text {
 #aboutWrap{
     width: 1400px;
 }
-#about .container-fluid{
+.container-fluid{
     width: 1400px;
 }
 #about .photo{
@@ -238,21 +238,17 @@ text {
     background: #6665ee;
 }
 .skill-bars{
-    width: 145%;
+    width: 130%;
 }
 .skill-bars .bar{
     margin: 20px 0;
-    display: flex;
-    align-items: center;
 }
 .skill-bars .bar:first-child{
     margin-top: 0px;
-    display: flex;
-    align-items: center;
 }
 .skill-bars .bar .info{
     margin-bottom: 5px;
-    width: 30%;
+    width: 15%;
 }
 .skill-bars .bar .info span{
     font-weight: 500;
@@ -266,13 +262,13 @@ text {
 }
 }
 .skill-bars .bar .progress-line{
-    height: 10px;
+    height: 20px;
     width: 100%;
     background: #f0f0f0;
     position: relative;
     transform: scaleX(0);
     transform-origin: left;
-    border-radius: 10px;
+    border-radius: 0;
     box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
     0 1px rgba(255,255,255,0.8);
     animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
@@ -285,10 +281,11 @@ text {
 .bar .progress-line span{
     height: 100%;
     position: absolute;
-    border-radius: 10px;
+    border-radius: 0;
     transform: scaleX(0);
     transform-origin: left;
     background: #6665ee;
+    left: 0;
     animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
 }
 .bar .progress-line.html span{
@@ -358,9 +355,35 @@ text {
 #skill .tit01{
     text-align: left;
 }
-#skill .container-fluid{
-    width: 1400px;
+
+#skill .skill-content > ul{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding-left: 0;
 }
+#skill .skill-content > ul > li{
+    display: flex;
+    gap: 15px;
+}
+#skill .skill-content > ul > li > p{
+    margin-bottom: 0;
+}
+#skill .col-md-3{
+    width: 35%;
+}
+#skill .skillFlex{
+    display: flex;
+    justify-content: space-around;
+}
+#skill .skillSize1{}
+#skill{}
+#skill{}
+#skill{}
+#skill{}
+
+
+
 
 
 /*cage24 부분*/
@@ -370,11 +393,42 @@ text {
 #cafe .tit01{
     text-align: left;
 }
-#cafe .container-fluid{
-    width: 1400px;
+
+#cafe .siteInfo .siteImg .img{
+    background: url('../img/siteimg/cafe24_page.png') no-repeat;
+    width: 500px;
+    background-size: cover;
+    height: 310px;
+    border-radius: 10px;
+    position: relative;
 }
-#cafe .skillFlex{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+#cafe .siteInfo .siteImg .img img{
+    position: absolute;
+    top: -3%;
+    left: 0;
 }
+
+#cafe .siteInfo .siteImg .img:hover{
+    animation: siteScroll 10s ease infinite;
+}
+@keyframes siteScroll {
+    0% {
+    background-position-y: 0;
+}
+100% {
+    background-position-y: 100%;
+}
+
+}
+
+
+
+#cafe{}
+#cafe{}
+#cafe{}
+#cafe{}
+#cafe{}
+#cafe{}
+#cafe{}
+
+

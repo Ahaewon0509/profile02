@@ -238,7 +238,7 @@ text {
     background: #6665ee;
 }
 .skill-bars{
-    width: 130%;
+    width: 530px;
 }
 .skill-bars .bar{
     margin: 20px 0;
@@ -376,8 +376,10 @@ text {
     display: flex;
     justify-content: space-around;
 }
-#skill .skillSize1{}
-#skill{}
+#skill .about-content01{
+    width: 530px;
+}
+
 #skill{}
 #skill{}
 #skill{}
@@ -420,11 +422,33 @@ text {
 }
 
 }
-
-
-
-#cafe{}
-#cafe{}
+#cafe .leftTit{
+    width: 550px;
+}
+#cafe .siteInfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#cafe .siteInfo .leftTit dl{
+    display: flex;
+    flex-flow: row wrap;
+    width: 130%;
+}
+#cafe .siteInfo .leftTit dl dt{
+    width: 18%;
+}
+#cafe .siteInfo .leftTit dl dd{
+    width: 65%;
+}
+#cafe .siteInfo .leftTit a{
+    display: block;
+    padding: 10px 5px;
+    width: 115px;
+    border: 1px solid #ccc;
+    text-align: center;
+    color: #222;
+}
 #cafe{}
 #cafe{}
 #cafe{}

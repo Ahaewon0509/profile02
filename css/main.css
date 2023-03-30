@@ -391,6 +391,7 @@ text {
 /*cage24 부분*/
 #cafe{
     background: #f9f9f9;
+    height: 80%;
 }
 #cafe .tit01{
     text-align: left;
@@ -398,9 +399,9 @@ text {
 
 #cafe .siteInfo .siteImg .img{
     background: url('../img/siteimg/cafe24_page.png') no-repeat;
-    width: 500px;
+    width: 550px;
     background-size: cover;
-    height: 310px;
+    height: 321px;
     border-radius: 10px;
     position: relative;
 }
@@ -408,6 +409,7 @@ text {
     position: absolute;
     top: -3%;
     left: 0;
+    width: 550px;
 }
 
 #cafe .siteInfo .siteImg .img:hover{
@@ -423,7 +425,7 @@ text {
 
 }
 #cafe .leftTit{
-    width: 550px;
+    width: 480px;
 }
 #cafe .siteInfo{
     display: flex;
@@ -433,26 +435,239 @@ text {
 #cafe .siteInfo .leftTit dl{
     display: flex;
     flex-flow: row wrap;
-    width: 130%;
+    width: 100%;
 }
 #cafe .siteInfo .leftTit dl dt{
-    width: 18%;
+    width: 30%;
+    line-height: 33px;
 }
 #cafe .siteInfo .leftTit dl dd{
-    width: 65%;
+    width: 70%;
+    line-height: 33px;
 }
-#cafe .siteInfo .leftTit a{
+/* #cafe .siteInfo .leftTit a{
     display: block;
     padding: 10px 5px;
     width: 115px;
     border: 1px solid #ccc;
     text-align: center;
     color: #222;
+} */
+
+
+#cafe .button {
+    width: 140px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin-top: 13px;
 }
-#cafe{}
-#cafe{}
-#cafe{}
-#cafe{}
-#cafe{}
+
+#cafe .button:hover {
+    background-color: #bb91e3;
+    /* box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4); */
+    color: #fff;
+    transform: translateY(-7px);
+}
 
 
+/*하드코딩 부분*/
+#hardCoding{
+    background: #fff;
+    height: 80%;
+}
+#hardCoding .tit01{
+    text-align: left;
+    margin-bottom: 60px;
+}
+
+#hardCoding .siteInfo .siteImg .img{
+    background: url('../img/siteimg/hardCoding_page.png') no-repeat;
+    width: 550px;
+    background-size: cover;
+    height: 321px;
+    border-radius: 10px;
+    position: relative;
+}
+#hardCoding .siteInfo .siteImg .img img{
+    position: absolute;
+    top: -3%;
+    left: 0;
+    width: 550px;
+}
+
+#hardCoding .siteInfo .siteImg .img:hover{
+    animation: siteScroll 10s ease infinite;
+}
+@keyframes siteScroll {
+    0% {
+    background-position-y: 0;
+}
+100% {
+    background-position-y: 100%;
+}
+}
+
+#hardCoding .rightCon{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+#hardCoding .rightTit{
+    width: 625px;
+}
+#hardCoding .siteInfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#hardCoding .siteInfo .rightTit dl{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
+#hardCoding .siteInfo .rightTit dl dt{
+    width: 30%;
+    line-height: 33px;
+}
+#hardCoding .siteInfo .rightTit dl dd{
+    width: 70%;
+    line-height: 33px;
+}
+/* #cafe .siteInfo .leftTit a{
+    display: block;
+    padding: 10px 5px;
+    width: 115px;
+    border: 1px solid #ccc;
+    text-align: center;
+    color: #222;
+} */
+#hardCoding .plusBtn{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#hardCoding .button1{
+    width: 140px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin-top: 13px;
+}
+
+#hardCoding .button1:hover{
+    background-color: #bb91e3;
+    /* box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4); */
+    color: #fff;
+    transform: translateY(-7px);
+}
+#hardCoding .button2{
+    width: 140px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin-top: 13px;
+}
+
+#hardCoding .button2:hover{
+    background-color: #ab6fe3;
+    /* box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4); */
+    color: #fff;
+    transform: translateY(-7px);
+}
+#hardCoding .button3{
+    width: 140px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin-top: 13px;
+}
+
+#hardCoding .button3:hover{
+    background-color: #9b4de3;
+    /* box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4); */
+    color: #fff;
+    transform: translateY(-7px);
+}
+#hardCoding .button4{
+    width: 140px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin-top: 13px;
+}
+
+#hardCoding .button4:hover{
+    background-color: #8a2be2;
+    /* box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4); */
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+/*리뉴얼 사이트*/
+#reSite{
+    background-color: #f9f9f9;
+}
+#reSite .siteWrap{
+    width: 1500px;
+    margin: 0 auto;
+}
+#reSite .owl-carousel{
+    margin-top: 5%;
+}

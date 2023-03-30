@@ -144,7 +144,8 @@ text {
     width: 1400px;
 }
 .container-fluid{
-    width: 1400px;
+    width: 100%;
+    max-width: 1400px;
 }
 #about .photo{
     width: 385px;

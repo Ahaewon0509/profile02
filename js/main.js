@@ -23,7 +23,7 @@ function _chart ()
 				easing: 'easeOutElastic',
 				delay: 3000,
 				barColor: '#369670',
-				trackColor: '#fff',
+				trackColor: '#eee',
 				scaleColor: false,
 				lineWidth: 21,
 				trackWidth: 21,
@@ -33,7 +33,7 @@ function _chart ()
 					this.el.children[0].innerHTML = Math.round(percent);
 				}
 			});
-		}, 150);
+		}, 300);
 	});
 };
 
@@ -42,5 +42,19 @@ $(document).ready(function() {
     
 });
     
+    //  탑버튼
+    $(window).scroll(function(){
     
+        if( $(this).scrollTop() > 100 ){
+            $(".goToTop").addClass("on");
+        }
+        else{
+            $(".goToTop").removeClass("on");
+        }
+        
+    });
+        
+    $(".goToTop").click(function(){
+        window.scrollTo({top : 0, behavior: 'smooth'}); 
+    });
 });

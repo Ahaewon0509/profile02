@@ -1,65 +1,46 @@
-$(function() {
+$(function(){
+    'use strict';
 
-// const circle = document.querySelector('.cursor') 
-// console.log(circle)
-// let mouseX
-// let mouseY
-// window.addEventListener('mousemove',function(e){
-//     mouseX = e.clientX
-//     mouseY = e.clientY
-//     circle.style.left = mouseX+'px'
-//     circle.style.top = mouseY+'px'
-// })
-// document.addEventListener("mousemove", (e) => {
-//     const cursorwidth = $(".cursor").outerWidth()/2;
-//     const cursorHeight = $(".cursor").outerHeight()/2;
+var $window = $(window);
+
+function run()
+{
+	var fName = arguments[0],
+		aArgs = Array.prototype.slice.call(arguments, 1);
+	try {
+		fName.apply(window, aArgs);
+	} catch(err) {
+	}
+};
+
+/* chart
+================================================== */
+function _chart ()
+{
+	$('.b-skills').appear(function() {
+		setTimeout(function() {
+			$('.chart').easyPieChart({
+				easing: 'easeOutElastic',
+				delay: 3000,
+				barColor: '#369670',
+				trackColor: '#fff',
+				scaleColor: false,
+				lineWidth: 21,
+				trackWidth: 21,
+				size: 250,
+				lineCap: 'round',
+				onStep: function(from, to, percent) {
+					this.el.children[0].innerHTML = Math.round(percent);
+				}
+			});
+		}, 150);
+	});
+};
+
+$(document).ready(function() {
+	run(_chart);
     
-//     $(window).mousemove(function(e){
-//         gsap.to(".cursor", {duration: 0.5, left: e.pageX - cursorwidth, top: e.pageY - cursorHeight});
-//     });
-// });
-// var pointSize = $(".pointer").width()/2;
-// $("#wrap").mousemove(function(e){    
-//     $('.pointer').css("top", e.pageY-pointSize);
-//     $('.pointer').css("left", e.pageX-pointSize);
-//     $('.pointer').fadeIn();
-// });
-//     $("#wrap").on("mouseleave", function(){
-//     $('.pointer').fadeOut();
-// });
-
-    /*따라다니는 마우스*/
-
-
-/*스크롤 풀 페이지*/
-    // const $slider = $('.slider');
+});
     
-    // $slider.slick({
-    //     infinite: false,
-    //     arrows: false,
-    //     vertical: true,
-    //     dots: true,
-    //     speed: 1200,
-    //     cssEase: 'cubic-bezier(0.86, 0, 0.07, 1)'
-    // });
-
-    // $slider.mousewheel(function(e) {
-    //     e.preventDefault()
-    //     if (e.deltaY < 0) {
-
-    //         if ($(this).slick('slickCurrentSlide') === $(this).find('.slick-slide').length - 1) {
-    //         return
-    //         }
-
-    //         $(this).slick('slickNext');
-
-    //     } else {
-
-    //         if ($(this).slick('slickCurrentSlide') === 0) {
-    //         return
-    //         }
-
-    //         $(this).slick('slickPrev')
-    //     }
-    // });
+    
 });

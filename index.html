@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>부트스트랩_0327</title>
+    <title>부트스트랩_0408</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -39,6 +39,10 @@
     <link href="vendor/animate.css/animate.min.css" rel="stylesheet" type="text/css">
     <link href="vendor/device-mockups/device-mockups.min.css" rel="stylesheet" type="text/css">
 
+    <!-- js cnd -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+
     <!-- Vitality Theme CSS -->
     <!-- INSTRUCTIONS: Uncomment the color scheme you want to use. Red is chosen by default. -->
     <link href="css/vitality-red.css" rel="stylesheet" type="text/css">
@@ -55,7 +59,7 @@
     <!-- index.html 스타일시트 -->
     <link rel="stylesheet" href="./css/main.css" type="text/css"> 
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
-    <script src="./js/main.js"></script>
+    
     <!-- IE8 support for HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -160,8 +164,8 @@
         <div class="container-fluid">
             <div class="row text-center">
                 <div class="col-lg-12 wow fadeIn tit01">
-                    <p>001</p>
-                    <h1>ABOUT</h1>
+                    <!-- <p>001</p> -->
+                    <h1>ABOUT ME</h1>
                     <!-- <h1>Hi, I'm HyeWon</h1> -->
                     <p>안녕하세요.<br>
                         웹퍼블리셔 안혜원입니다.
@@ -170,87 +174,171 @@
                 </div>
             </div>
             <div id="aboutWrap">
-                <div class="myStory">
+                <!-- <div class="myStory">
                     <p>웹퍼블리셔로 새로운 시작을 하려고 합니다.
                     늘 새로운 마음가짐으로 배우며, 새롭게 웹퍼블리싱이라는 분야를 공부하게 되었고,<br>
                         흥미를 가지며 배워가며, 제가 직접 웹사이트를 디자인하고 기획하는 일이 너무 즐거운 웹퍼블리셔 안혜원 입니다.
                     </p>
-                </div>
+                </div> -->
                 <div class="aboutFlex">
 
                     <div class="photo"></div>
-                    <div class="row text-center content-row">
-                        <div class="con1">
-                            <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay=".2s">
-                                <div class="about-content">
-                                    <!-- <i class="fa fa-eye fa-4x"></i> -->
-                                    <h3>PROFILE</h3>
-                                    <ul>
-                                        <li>
-                                            <p class="txt1">Name</p>
-                                            <p class="txt2">안혜원</p>
-                                        </li>
-                                        <li>
-                                            <p class="txt1">Birth</p>
-                                            <p class="txt2">1999.06.05</p>
-                                        </li>
-                                        <li>
-                                            <p class="txt1">Phone</p>
-                                            <p class="txt2">010-9464-7963</p>
-                                        </li>
-                                        <li>
-                                            <p class="txt1">Mail</p>
-                                            <p class="txt2">cjstkth0999@naver.com</p>
-                                        </li>
-                                    </ul>
+                        <div class="aboutFlex">
+                        <div class="row text-center content-row">
+                            <div class="con1">
+                                <!-- 프로파일 -->
+                                <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay=".2s">
+                                    <div class="about-content">
+                                        <!-- <i class="fa fa-eye fa-4x"></i> -->
+                                        <h3>PROFILE</h3>
+                                        <ul>
+                                            <li>
+                                                <p class="txt1">Name</p>
+                                                <p class="txt2">안혜원</p>
+                                            </li>
+                                            <li>
+                                                <p class="txt1">Birth</p>
+                                                <p class="txt2">1999.06.05</p>
+                                            </li>
+                                            <li>
+                                                <p class="txt1">Phone</p>
+                                                <p class="txt2">010-9464-7963</p>
+                                            </li>
+                                            <li>
+                                                <p class="txt1">Mail</p>
+                                                <p class="txt2">cjstkth0999@naver.com</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- 자격증 -->
+                                <div class="col-md-3 col-sm-6 wow fadeIn skillSize" data-wow-delay=".6s">
+                                    <div class="skill-content">
+                                        <!-- <i class="fa fa-edit fa-4x"></i> -->
+                                        <h3>CERTIFICATE</h3>
+                                        <ul>
+                                            <li>
+                                                <p class="txt1">2023</p>
+                                                <p class="txt2">웹디자인기능사</p>
+                                            </li>
+                                            <li>
+                                                <p class="txt1">2022</p>
+                                                <p class="txt2">GTQ 1급</p>
+                                            </li>
+                                            <li>
+                                                <p class="txt1">2022</p>
+                                                <p class="txt2">운전면허 2종보통</p>
+                                            </li>
+                                            <!-- <li>
+                                                <p class="txt1">Phone</p>
+                                                <p class="txt2">010-9464-7963</p>
+                                            </li>
+                                            <li>
+                                                <p class="txt1">Mail</p>
+                                                <p class="txt2">cjstkth0999@naver.com</p>
+                                            </li> -->
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- 경력 -->
+                                <div class="col-md-3 col-sm-6 wow fadeIn wdSize" data-wow-delay=".4s">
+                                    <div class="about-content01">
+                                        <!-- <i class="fa fa-tablet fa-4x"></i> -->
+                                        <h3>EDUCATON</h3>
+                                        <ul>
+                                            <li>
+                                                <p class="txt1">2023</p>
+                                                <p class="txt2">UI/UX 웹퍼블리셔&프론트엔드 웹개발 실무 과정 수료</p>
+                                            </li>
+                                            <li>
+                                                <p class="txt1">2023</p>
+                                                <p class="txt2">대림대학교 스마트소프트웨어학과 졸업</p>
+                                            </li>
+                                            <li>
+                                                <p class="txt1">2021</p>
+                                                <p class="txt2">대림대학교 모바일인터넷과 졸업</p>
+                                            </li>
+                                            <li>
+                                                <p class="txt1">2018</p>
+                                                <p class="txt2">서울 금천고등학교 졸업</p>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 col-sm-6 wow fadeIn wdSize" data-wow-delay=".4s">
-                                <div class="about-content01">
-                                    <!-- <i class="fa fa-tablet fa-4x"></i> -->
-                                    <h3>EDUCATON</h3>
-                                    <ul>
-                                        <li>
-                                            <p class="txt1">2023</p>
-                                            <p class="txt2">UI/UX 웹퍼블리셔&프론트엔드 웹개발 실무 과정 수료</p>
-                                        </li>
-                                        <li>
-                                            <p class="txt1">2023</p>
-                                            <p class="txt2">대림대학교 스마트소프트웨어학과 졸업</p>
-                                        </li>
-                                        <li>
-                                            <p class="txt1">2021</p>
-                                            <p class="txt2">대림대학교 모바일인터넷과 졸업</p>
-                                        </li>
-                                        <li>
-                                            <p class="txt1">2018</p>
-                                            <p class="txt2">서울 금천고등학교 졸업</p>
-                                        </li>
-                                    </ul>
+                        </div>
+                        <div class="con2">
+                            <!-- 스킬 -->
+                            <section id="s-team" class="section">
+                                <div class="b-skills">
+                                    <div class="container">
+                                        <h3>CERTIFICATE</h3>
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-6 col-md-3">
+                                                <div class="skill-item center-block">
+                                                    <div class="chart-container">
+                                                        <div class="chart " data-percent="92" data-bar-color="#23afe3">
+                                                            <span class="percent" data-after="%">92</span>
+                                                        </div>
+                                                    </div>
+                                                    <p>HTML</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6 col-md-3">
+                                                <div class="skill-item center-block">
+                                                    <div class="chart-container">
+                                                        <div class="chart " data-percent="78" data-bar-color="#a7d212">
+                                                            <span class="percent" data-after="%">78</span>
+                                                        </div>
+                                                    </div>
+                                                    <p>CSS3</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6 col-md-3">
+                                                <div class="skill-item center-block">
+                                                    <div class="chart-container">
+                                                        <div class="chart " data-percent="95" data-bar-color="#ff4241">
+                                                            <span class="percent" data-after="%">95</span>
+                                                        </div>
+                                                    </div>
+                                                    <p>BOOSTRAP</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6 col-md-3">
+                                                <div class="skill-item center-block">
+                                                    <div class="chart-container">
+                                                        <div class="chart " data-percent="65" data-bar-color="#edc214">
+                                                            <span class="percent" data-after="%">65</span>
+                                                        </div>
+                                                    </div>
+                                                    <p>PHOTOSHOP</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-
-                            </div>
+                            </section>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="skill">
+    <!-- <section id="skill">
         <div class="container-fluid">
             <div class="row text-center">
                 <div class="col-lg-12 wow fadeIn tit01">
                     <p>002</p>
                     <h1>SKILLS</h1>
-                    <!-- <h1>Hi, I'm HyeWon</h1> -->
+                    <h1>Hi, I'm HyeWon</h1>
                     <p>능력치</p>
-                    <!-- <hr class="colored"> -->
+                    <hr class="colored">
                 </div>
             </div>
                 <div class="skillFlex">
                     <div class="wow fadeIn skillSize1" data-wow-delay=".8s">
                         <div class="about-content01">
-                            <!-- <i class="fa fa-heart fa-4x"></i> -->
+                            <i class="fa fa-heart fa-4x"></i>
                         <h3>SKILLS</h3>
                             <div class="skill-bars">
                                 <div class="bar">
@@ -296,37 +384,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-6 wow fadeIn skillSize" data-wow-delay=".6s">
-                        <div class="skill-content">
-                            <!-- <i class="fa fa-edit fa-4x"></i> -->
-                            <h3>CERTIFICATE</h3>
-                            <ul>
-                                <li>
-                                    <p class="txt1">2023</p>
-                                    <p class="txt2">웹디자인기능사</p>
-                                </li>
-                                <li>
-                                    <p class="txt1">2022</p>
-                                    <p class="txt2">GTQ 1급</p>
-                                </li>
-                                <li>
-                                    <p class="txt1">2022</p>
-                                    <p class="txt2">운전면허 2종보통</p>
-                                </li>
-                                <!-- <li>
-                                    <p class="txt1">Phone</p>
-                                    <p class="txt2">010-9464-7963</p>
-                                </li>
-                                <li>
-                                    <p class="txt1">Mail</p>
-                                    <p class="txt2">cjstkth0999@naver.com</p>
-                                </li> -->
-                            </ul>
-                        </div>
-                    </div>
+
                 </div>
         </div>
-    </section>
+    </section> -->
 
     <section id="cafe">
         <div class="container-fluid">
@@ -1456,6 +1517,11 @@
     <!-- slick slide -->
     <script src="./js/mainJquery.js"></script>
     <script src="./js/slick.min.js"></script>
+
+    <!-- 메인페이지 js -->
+    <script src="./js/jquery.appear.min.js"></script>
+    <script src="./js/jquery.easypiechart.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

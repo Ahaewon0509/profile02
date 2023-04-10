@@ -138,7 +138,7 @@ text {
 
 /*about부분*/
 #about{
-	background: #f9f9f9;
+	background: #fff;
 }
 #aboutWrap{
     width: 1400px;
@@ -159,11 +159,11 @@ text {
     margin-top: 0;
     align-items: stretch;
 }
-#about .aboutFlex{
+/* #about .aboutFlex{
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
+} */
 #about .about-content{
     padding: 15px;
     display: flex;
@@ -229,161 +229,92 @@ text {
 }
 #about .tit01{
     text-align: left;
-}
-#about{}
-#about{}
-
-
-::selection{
-    color: #fff;
-    background: #6665ee;
-}
-.skill-bars{
-    width: 530px;
-}
-.skill-bars .bar{
-    margin: 20px 0;
-}
-.skill-bars .bar:first-child{
-    margin-top: 0px;
-}
-.skill-bars .bar .info{
-    margin-bottom: 5px;
-    width: 15%;
-}
-.skill-bars .bar .info span{
-    font-weight: 500;
-    font-size: 17px;
-    opacity: 0;
-    animation: showText 0.5s 1s linear forwards;
-}
-@keyframes showText {
-100%{
-    opacity: 1;
-}
-}
-.skill-bars .bar .progress-line{
-    height: 20px;
-    width: 100%;
-    background: #f0f0f0;
     position: relative;
-    transform: scaleX(0);
-    transform-origin: left;
-    border-radius: 0;
-    box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
-    0 1px rgba(255,255,255,0.8);
-    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
 }
-@keyframes animate {
-100%{
-    transform: scaleX(1);
-}
-}
-.bar .progress-line span{
-    height: 100%;
+#about .tit01 h1::after{
+    content: "01";
     position: absolute;
-    border-radius: 0;
-    transform: scaleX(0);
-    transform-origin: left;
-    background: #6665ee;
+    top: 100%;
     left: 0;
-    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+
 }
-.bar .progress-line.html span{
-    width: 90%; 
-}
-.bar .progress-line.css span{
-    width: 60%;
-}
-.bar .progress-line.jquery span{
-    width: 85%;
-}
-.bar .progress-line.python span{
-    width: 50%;
-}
-.bar .progress-line.mysql span{
-    width: 75%;
-}
-.progress-line span::before{
-    position: absolute;
-    content: "";
-    top: -10px;
-    right: 0;
-    height: 0;
-    width: 0;
-    border: 7px solid transparent;
-    border-bottom-width: 0px;
-    border-right-width: 0px;
-    border-top-color: #000;
-    opacity: 0;
-    animation: showText2 0.5s 1.5s linear forwards;
-}
-.progress-line span::after{
-    position: absolute;
-    top: -28px;
-    right: 0;
-    font-weight: 500;
-    background: #000;
-    color: #fff;
-    padding: 1px 8px;
-    font-size: 12px;
-    border-radius: 3px;
-    opacity: 0;
-    animation: showText2 0.5s 1.5s linear forwards;
-}
-@keyframes showText2 {
-100%{
-    opacity: 1;
-}
-}
-.progress-line.html span::after{
-    content: "90%";
-}
-.progress-line.css span::after{
-    content: "60%";
-}
-.progress-line.jquery span::after{
-    content: "85%";
-}
-.progress-line.python span::after{
-    content: "50%";
-}
-.progress-line.mysql span::after{
-    content: "75%";
-}
+#about{}
+#about{}
+
 
 /*skill 부분*/
-#skill .tit01{
-    text-align: left;
-}
-
-#skill .skill-content > ul{
+#aboutWrap .aboutFlex{
     display: flex;
     flex-direction: column;
-    gap: 18px;
-    padding-left: 0;
 }
-#skill .skill-content > ul > li{
-    display: flex;
-    gap: 15px;
+#about .con2 section{
+    padding: 0;
 }
-#skill .skill-content > ul > li > p{
-    margin-bottom: 0;
+#about .con2 .col-md-3{
+    width: 20%;
 }
-#skill .col-md-3{
-    width: 35%;
-}
-#skill .skillFlex{
-    display: flex;
-    justify-content: space-around;
-}
-#skill .about-content01{
-    width: 530px;
+#about .con2 .b-skills
+{
+	border-top: 1px solid #f9f9f9;
+	padding-top: 46px;
+	text-align: center;
 }
 
-#skill{}
-#skill{}
-#skill{}
+#about .con2 .b-skills:last-child { margin-bottom: -30px; }
+
+#about .con2 .b-skills h2 { margin-bottom: 50px; font-weight: 900; text-transform: uppercase;}
+
+#about .con2 .skill-item{
+	position: relative;
+	max-width: 250px;
+	width: 100%;
+	margin-bottom: 30px;
+	color: #555;
+}
+
+#about .con2 .chart-container{
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-top: 100%;
+	margin-bottom: 27px;
+}
+
+#about .con2 .skill-item .chart,
+#about .con2 .skill-item .chart canvas{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+#about .con2 .skill-item .chart:before{
+	content: "";
+	width: 0;
+	height: 100%;
+}
+
+#about .con2 .skill-item .chart:before,
+#about .con2 .skill-item .percent{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#about .con2 .skill-item .percent{
+	position: relative;
+	line-height: 1;
+	font-size: 40px;
+	font-weight: 900;
+	z-index: 2;
+}
+
+#about .con2 .skill-item .percent:after{
+	content: attr(data-after);
+	font-size: 20px;
+}
+
+
 
 
 

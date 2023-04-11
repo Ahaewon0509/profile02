@@ -301,7 +301,7 @@ text {
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    transition: 0.5s linear;
+    transition: 0.4s linear;
 }
 .navigation__link:hover, .navigation__link:active{
     background-size: 100%;

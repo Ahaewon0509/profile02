@@ -1,0 +1,86 @@
+#about .con2 .b-skills{
+	padding-top: 10px;
+	text-align: center;
+}
+
+#about .con2 .b-skills:last-child{ 
+    margin-bottom: -30px; 
+}
+
+#about .con2 .b-skills h2{ 
+    margin-bottom: 50px; 
+    font-weight: 900; 
+    text-transform: uppercase;
+}
+
+#about .con2 .skill-item{
+	position: relative;
+	max-width: 250px;
+	width: 100%;
+	color: #555;
+}
+
+#about .con2 .chart-container{
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-top: 100%;
+	margin-bottom: 27px;
+}
+#about .skillContainer h3{
+    text-align: left;
+}
+#about .skillContainer .row{
+    margin-top: 3%;
+}
+#about .con2 .skill-item .chart,
+#about .con2 .skill-item .chart canvas{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+#about .con2 .skill-item .chart:before{
+	content: "";
+	width: 0;
+	height: 100%;
+}
+
+#about .con2 .skill-item .chart:before,
+#about .con2 .skill-item .percent{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#about .con2 .skill-item .percent{
+	position: relative;
+	line-height: 1;
+	font-size: 40px;
+	font-weight: 900;
+	z-index: 2;
+}
+
+#about .con2 .skill-item .percent:after{
+	content: attr(data-after);
+	font-size: 20px;
+}
+#about .skill-content{
+    text-align: left;
+}
+#about .skill-content ul{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 12px;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+#about .skill-content ul > li{
+    display: flex;
+    gap: 18px;
+}
+#about .skill-content ul > li > p{
+    margin: 0;
+    font-size: 1.1em;
+}

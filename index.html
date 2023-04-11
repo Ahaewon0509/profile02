@@ -81,7 +81,27 @@
     </div>
     <!-- 헤더 부분-->
     <!-- NOTE: .navbar-default and .navbar-inverse are both supported with this theme. -->
-    <nav class="navbar navbar-inverse navbar-fixed-top navbar-expanded">
+    <div class="navigation navbar-inverse navbar-expanded">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+        <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+    </label>
+    <div class="navigation__background">&nbsp;</div>
+    
+    <nav class="navigation__nav">
+        <ul class="navigation__list">
+        <li class="navigation__item"><a href="#page-top" class="navigation__link">Main</a></li>
+        <li class="navigation__item"><a href="#about" class="navigation__link">About</a></li>
+        <li class="navigation__item"><a href="#cafe" class="navigation__link">CMS</a></li>
+        <li class="navigation__item"><a href="#hardCoding" class="navigation__link">Project01</a></li>
+        <li class="navigation__item"><a href="#reSite" class="navigation__link">Project02</a></li>
+        <li class="navigation__item"><a href="#toDoList" class="navigation__link">Vanilla JS</a></li>
+        </ul>
+    </nav>
+    
+    </div>
+    <!-- 기존 메뉴 부분 -->
+    <!-- <nav class="navbar navbar-inverse navbar-fixed-top navbar-expanded">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -89,7 +109,7 @@
                     <i class="fa fa-bars"></i> Menu
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">
-                    <img src="img/agency/mainLogo.png" class="img-responsive" alt=""><!--src="img/agency/logo.svg"-->
+                    <img src="img/agency/mainLogo.png" class="img-responsive" alt="">src="img/agency/logo.svg"
                 </a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -107,7 +127,7 @@
                         <a class="page-scroll" href="#hardCoding">Project01</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#reSite">Project2</a>
+                        <a class="page-scroll" href="#reSite">Project02</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#toDoList">Vanilla JS</a>
@@ -115,7 +135,7 @@
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav> -->
 
     <!-- Header -->
     <header></header> <!--style="background-image: url('img/agency/backgrounds/blurry-g2e8f865eb_1920.jpg');"-->
@@ -163,7 +183,7 @@
                 Publisher
             </text>
         </svg>
-        <div class="titGroup04 wow fadeInUp">
+        <div class="titGroup04 wow fadeInUpBig">
             <p>'맡은 일 똑부러지게' 해내는 안혜원입니다.</p>
         </div>
     </div>

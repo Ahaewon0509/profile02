@@ -140,38 +140,59 @@ section{
 	/* position: absolute;
 	transform: translate(-50%, -50%); */
 }
-.intro-content{
+/* .intro-content{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 51%;
 	text-align: center;
-}
-.titGroup03 p{
+} */
+/* .titGroup03 p{
 	color: #fff;
 	line-height: 30px;
 	font-size: 1.4em;
 	margin-top: 12px;
 	font-family: 'Gowun Dodum', sans-serif;
-}
+} */
 /*메인텍스트*/
 .mainTxt{}
 .mainTxt{}
+.intro-content svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
 svg {
 	/* font-family: 'Russo One', sans-serif; */
     font-family: 'Lobster', cursive;
 	position: absolute; 
-	width: 100%; height: 100%;
+	width: 100%; 
+    height: 100%;
 }
 text {
-	text-transform: uppercase;
-	animation: stroke 5s infinite alternate;
+	/* text-transform: uppercase; */
+	animation: stroke 9s infinite alternate;
 	stroke-width: 2;
 	stroke: #365fa0;
-	font-size: 140px;
+	font-size: 8em;
 }
+/* rgba(248,190,103,1),rgba(238,98,144,1) */
 @keyframes stroke {
+	0%   {
+		fill: rgba(72,138,20,0); stroke: #fff;
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(72,138,20,0); stroke: #fff; }
+	80%  {fill: rgba(72,138,20,0); stroke: #fff; stroke-width: 2; }
+	100% {
+		fill: #fff; stroke: rgba(54,95,160,0); 
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+/* @keyframes stroke {
 	0%   {
 		fill: rgba(72,138,20,0); stroke: rgba(54,95,160,1);
 		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
@@ -182,8 +203,19 @@ text {
 		fill: rgba(72,138,204,1); stroke: rgba(54,95,160,0); 
 		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
 	}
+} */
+.titGroup04{
+    position: absolute;
+    top: 68%;
+    left: 39%;
 }
-
+.titGroup04 p{
+	color: #fff;
+	line-height: 30px;
+	font-size: 1.4em;
+	margin-top: 12px;
+	font-family: 'Gowun Dodum', sans-serif;
+}
 
 /*메뉴 부분*/
 #page-top nav{

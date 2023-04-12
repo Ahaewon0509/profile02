@@ -74,4 +74,5 @@ $(document).ready(function() {
     //     // Get your license at https://alvarotrigo.com/fullPage/pricing/
     //     licenseKey: 'YOUR LICENSE KEY HERE '
     // });
+
 });

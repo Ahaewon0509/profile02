@@ -78,7 +78,7 @@ header{
     /* top: 0;
     left: 0; */
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background: linear-gradient(to right, #a6d900 0%, #ff4454 100%);
     opacity: 0.5;
     animation: huerotator 6s infinite alternate;
@@ -158,12 +158,18 @@ section{
 /*메인텍스트*/
 .mainTxt{}
 .mainTxt{}
-.intro-content svg{
+header .intro-content{
+    width: 100% !important;
+    height: 65% !important;
+}
+header .intro-content svg{
     position: absolute;
     top: 55%;
     left: 50%;
     text-align: center;
     transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
 }
 svg {
 	/* font-family: 'Russo One', sans-serif; */
@@ -204,12 +210,12 @@ text {
 		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
 	}
 } */
-.titGroup04{
+header .intro-content .titGroup04{
     position: absolute;
-    top: 71%;
-    left: 39%;
+    width: 100%;
+    top: 81%;
 }
-.titGroup04 p{
+header .intro-content .titGroup04 > p{
 	color: #fff;
 	line-height: 30px;
 	font-size: 1.4em;
@@ -371,7 +377,14 @@ text {
 	to{
 		transform: translatey(-20px);
 	}
-	}
+}
+
+/* 풀페이지 */
+
+
+
+
+
 
 /*탑버튼*/
 .goToTop {
@@ -379,6 +392,7 @@ text {
     bottom: 50px;
     right: 50px;
     cursor: pointer;
+    z-index: 9;
 }
 .goToTop a {
     width: 60px;

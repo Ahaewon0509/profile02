@@ -517,6 +517,15 @@ text {
     margin: 0;
     font-size: 1.1em;
 }
+#about .about-content > ul > li .num01{
+    margin-left: 8px;
+}
+#about .about-content > ul > li .num02{
+    margin-left: -3px;
+}
+#about .about-content > ul > li .num03{
+    margin-left: 16px;
+}
 #about .about-content01{
     /* padding: 15px; */
     display: flex;

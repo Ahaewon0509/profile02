@@ -1,5 +1,6 @@
 $(function(){
 
+
 'use strict';
 
 var $window = $(window);
@@ -59,21 +60,6 @@ $(document).ready(function() {
         window.scrollTo({top : 0, behavior: 'smooth'}); 
     });
 
-    // // 풀페이지
-    // $(document).ready(function() {
-    //     $('#fullpage').fullpage({
-    //         //options here
-    //         licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
-    //         autoScrolling:true,
-    //         scrollHorizontally: true
-    //     });
-    // });
-    // new fullpage('#fullpage', {
-    //     sectionsColor: ['yellow', 'orange', '#C0C0C0', '#ADD8E6'],
-        
-    //     // Get your license at https://alvarotrigo.com/fullPage/pricing/
-    //     licenseKey: 'YOUR LICENSE KEY HERE '
-    // });
 
 
     

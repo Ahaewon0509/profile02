@@ -103,7 +103,10 @@ h1{
     margin-bottom: 25px;
 }
 section{
-    padding: 145px 0 !important;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    overflow: hidden;
 }
 /*마우스 따라다니는 아이콘*/
 
@@ -465,6 +468,7 @@ text {
 /*about부분*/
 #about{
 	background: #fff;
+    padding: 145px 0;
 }
 #aboutWrap{
     width: 1400px;
@@ -698,7 +702,7 @@ text {
 /*cage24 부분*/
 #cafe{
     background: #f9f9f9;
-    height: 96%;
+    padding: 145px 0;
 }
 #cafe .tit01{
     text-align: left;
@@ -802,7 +806,7 @@ text {
 /*하드코딩 부분*/
 #hardCoding{
     background: #fff;
-    height: 100%;
+    padding: 145px 0;
 }
 #hardCoding .tit01{
     text-align: left;
@@ -999,7 +1003,7 @@ text {
 /*리뉴얼 사이트*/
 #reSite{
     background-color: #f9f9f9;
-    height: 100%;
+    padding: 145px 0;
 }
 #reSite .siteWrap{
     width: 1400px;
@@ -1169,7 +1173,7 @@ text {
 /*todo list 부분*/
 #toDoList{
     background: #fff;
-    height: 100%;
+    padding: 145px 0;
 }
 #toDoList .listWrap{
     width: 1400px;

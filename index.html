@@ -63,7 +63,7 @@
     <link rel="stylesheet" href="./css/slick-theme.css">
 
     <!-- 풀페이지 css -->
-    <link rel="stylesheet" href="./fullpage/jquery.fullpage.min.css">
+    <!-- <link rel="stylesheet" href="./fullpage/jquery.fullpage.min.css"> -->
     <!-- <link rel="stylesheet" href="./fullpage/examples.css"> -->
 
     <!-- index.html 스타일시트 -->
@@ -85,262 +85,260 @@
     <!-- 마우스 커서 -->
     <div class="cursor ani_on"></div>
 
+    <div class="goToTop">
+        <a href="#heder">TOP</a>
+        <img src="./img/icon/top.png" alt="탑 버튼">
+    </div>
     <!-- 풀페이지 -->
-    <div id="fullpage">
-            <!-- 헤더 부분-->
-            <!-- NOTE: .navbar-default and .navbar-inverse are both supported with this theme. -->
-        <div class="navigation navbar-inverse navbar-expanded">
-            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-            <label for="navi-toggle" class="navigation__button">
-                <span class="navigation__icon">&nbsp;</span>
-            </label>
-        <div class="navigation__background">&nbsp;</div>
-        <nav class="navigation__nav">
-            <ul class="navigation__list">
-            <li class="navigation__item"><a href="#page-top" class="navigation__link">Main</a></li>
-            <li class="navigation__item"><a href="#about" class="navigation__link">About</a></li>
-            <li class="navigation__item"><a href="#cafe" class="navigation__link">CMS</a></li>
-            <li class="navigation__item"><a href="#hardCoding" class="navigation__link">Project01</a></li>
-            <li class="navigation__item"><a href="#reSite" class="navigation__link">Project02</a></li>
-            <li class="navigation__item"><a href="#toDoList" class="navigation__link">Vanilla JS</a></li>
+    <div class="navigation navbar-inverse navbar-expanded">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+    <div class="navigation__background">&nbsp;</div>
+    <nav class="navigation__nav">
+        <ul class="navigation__list">
+        <li class="navigation__item"><a href="#page-top" class="navigation__link">Main</a></li>
+        <li class="navigation__item"><a href="#about" class="navigation__link">About</a></li>
+        <li class="navigation__item"><a href="#cafe" class="navigation__link">CMS</a></li>
+        <li class="navigation__item"><a href="#hardCoding" class="navigation__link">Project01</a></li>
+        <li class="navigation__item"><a href="#reSite" class="navigation__link">Project02</a></li>
+        <li class="navigation__item"><a href="#toDoList" class="navigation__link">Vanilla JS</a></li>
+        </ul>
+    </nav>
+    </div>
+    <!-- 기존 메뉴 부분 -->
+    <!-- <nav class="navbar navbar-inverse navbar-fixed-top navbar-expanded">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <i class="fa fa-bars"></i> Menu
+            </button>
+            <a class="navbar-brand page-scroll" href="#page-top">
+                <img src="img/agency/mainLogo.png" class="img-responsive" alt="">src="img/agency/logo.svg"
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                    <a class="page-scroll" href="#page-top"></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#about">About</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#cafe">CMS</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#hardCoding">Project01</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#reSite">Project02</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#toDoList">Vanilla JS</a>
+                </li>
             </ul>
-        </nav>
         </div>
-        <!-- 기존 메뉴 부분 -->
-        <!-- <nav class="navbar navbar-inverse navbar-fixed-top navbar-expanded">
+    </div>
+    </nav> -->
+
+    <!-- Header -->
+    <header id="header" class="full">
         <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <i class="fa fa-bars"></i> Menu
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    <img src="img/agency/mainLogo.png" class="img-responsive" alt="">src="img/agency/logo.svg"
-                </a>
-            </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a class="page-scroll" href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#cafe">CMS</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#hardCoding">Project01</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#reSite">Project02</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#toDoList">Vanilla JS</a>
-                    </li>
-                </ul>
-            </div>
+            <div class="bottom_snow"></div>
+            <div class="fall_snow"></div>
         </div>
-        </nav> -->
-        <div class="goToTop">
-            <a href="#heder">TOP</a>
-            <img src="./img/icon/top.png" alt="탑 버튼">
+        <div class="intro-content">
+            <div class="circle_obj">
+                <span class="obj01"></span>
             </div>
-        <!-- Header -->
-        <div id="section1" class="section first">
-            <header class="section">
-                <div class="container">
-                    <div class="bottom_snow"></div>
-                    <div class="fall_snow"></div>
-                </div>
-                <div class="intro-content">
-                    <div class="circle_obj">
-                        <span class="obj01"></span>
-                    </div>
-                    <svg viewBox="0 0 1320 300">
-                        <text x="50%" y="5%" dy=".35em" text-anchor="middle" textLength="250" dominant-baseline="middle">
-                            Web
-                        </text>
-                        <text x="50%" y="50%" dy=".35em" text-anchor="middle" textLength="560" dominant-baseline="middle">
-                            Publisher
-                        </text>
-                    </svg>
-                    <div class="titGroup04 wow fadeInUpBig">
-                        <p>'맡은 일 똑부러지게' 해내는 안혜원입니다.</p>
-                    </div>
-                </div>
-            </header>
+            <svg viewBox="0 0 1320 300">
+                <text x="50%" y="5%" dy=".35em" text-anchor="middle" textLength="250" dominant-baseline="middle">
+                    Web
+                </text>
+                <text x="50%" y="50%" dy=".35em" text-anchor="middle" textLength="560" dominant-baseline="middle">
+                    Publisher
+                </text>
+            </svg>
+            <div class="titGroup04 wow fadeInUpBig">
+                <p>'맡은 일 똑부러지게' 해내는 안혜원입니다.</p>
+            </div>
         </div>
         <div class="scroll-down">
             <p class="arrow">
                 <a href="#about"><img src="./img/icon/arrow.png" alt="스크롤 아이콘"></a>
             </p>
         </div>
-        <!-- About Section -->
-        <section id="about" class="section">
-            <div class="container-fluid">
-                <div class="row text-center">
-                    <div class="col-lg-12 wow fadeIn tit01">
-                        <!-- <p>001</p> -->
-                        <h1>ABOUT ME</h1>
-                        <span class="num"></span>
-                        <!-- <h1>Hi, I'm HyeWon</h1> -->
-                        <p>안녕하세요.<br>
-                            웹퍼블리셔 안혜원입니다.
-                        </p>
-                        <!-- <hr class="colored"> -->
-                    </div>
+    </header>
+
+        
+
+    <!-- About Section -->
+    <section id="about" class="full">
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="col-lg-12 wow fadeIn tit01">
+                    <!-- <p>001</p> -->
+                    <h1>ABOUT ME</h1>
+                    <span class="num"></span>
+                    <!-- <h1>Hi, I'm HyeWon</h1> -->
+                    <p>안녕하세요.<br>
+                        웹퍼블리셔 안혜원입니다.
+                    </p>
+                    <!-- <hr class="colored"> -->
                 </div>
-                <div id="aboutWrap">
-                    <!-- <div class="myStory">
-                        <p>웹퍼블리셔로 새로운 시작을 하려고 합니다.
-                        늘 새로운 마음가짐으로 배우며, 새롭게 웹퍼블리싱이라는 분야를 공부하게 되었고,<br>
-                            흥미를 가지며 배워가며, 제가 직접 웹사이트를 디자인하고 기획하는 일이 너무 즐거운 웹퍼블리셔 안혜원 입니다.
-                        </p>
-                    </div> -->
-                    <div class="aboutContain">
-                        <div class="aboutFlex1">
-                            <div class="photo"></div>
-                            <div class="aboutFlex2">
-                                <div class="row text-center content-row">
-                                    <div class="con1">
-                                        <!-- 프로파일 -->
-                                        <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay=".2s">
-                                            <div class="about-content">
-                                                <!-- <i class="fa fa-eye fa-4x"></i> -->
-                                                <h3>PROFILE</h3>
-                                                <ul>
-                                                    <li>
-                                                        <p class="txt1">Name</p>
-                                                        <p class="txt2">안혜원</p>
-                                                    </li>
-                                                    <li>
-                                                        <p class="txt1">Birth</p>
-                                                        <p class="txt2 num01">1999.06.05</p>
-                                                    </li>
-                                                    <li>
-                                                        <p class="txt1">Phone</p>
-                                                        <p class="txt2 num02">010-9464-7963</p>
-                                                    </li>
-                                                    <li>
-                                                        <p class="txt1">Mail</p>
-                                                        <p class="txt2 num03">cjstkth0999@naver.com</p>
-                                                    </li>
-                                                </ul>
-                                            </div>
+            </div>
+            <div id="aboutWrap">
+                <!-- <div class="myStory">
+                    <p>웹퍼블리셔로 새로운 시작을 하려고 합니다.
+                    늘 새로운 마음가짐으로 배우며, 새롭게 웹퍼블리싱이라는 분야를 공부하게 되었고,<br>
+                        흥미를 가지며 배워가며, 제가 직접 웹사이트를 디자인하고 기획하는 일이 너무 즐거운 웹퍼블리셔 안혜원 입니다.
+                    </p>
+                </div> -->
+                <div class="aboutContain">
+                    <div class="aboutFlex1">
+                        <div class="photo"></div>
+                        <div class="aboutFlex2">
+                            <div class="row text-center content-row">
+                                <div class="con1">
+                                    <!-- 프로파일 -->
+                                    <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay=".2s">
+                                        <div class="about-content">
+                                            <!-- <i class="fa fa-eye fa-4x"></i> -->
+                                            <h3>PROFILE</h3>
+                                            <ul>
+                                                <li>
+                                                    <p class="txt1">Name</p>
+                                                    <p class="txt2">안혜원</p>
+                                                </li>
+                                                <li>
+                                                    <p class="txt1">Birth</p>
+                                                    <p class="txt2 num01">1999.06.05</p>
+                                                </li>
+                                                <li>
+                                                    <p class="txt1">Phone</p>
+                                                    <p class="txt2 num02">010-9464-7963</p>
+                                                </li>
+                                                <li>
+                                                    <p class="txt1">Mail</p>
+                                                    <p class="txt2 num03">cjstkth0999@naver.com</p>
+                                                </li>
+                                            </ul>
                                         </div>
-                                        <!-- 자격증 -->
-                                        <div class="col-md-3 col-sm-6 wow fadeIn skillSize" data-wow-delay=".6s">
-                                            <div class="skill-content">
-                                                <!-- <i class="fa fa-edit fa-4x"></i> -->
-                                                <h3>CERTIFICATE</h3>
-                                                <ul>
-                                                    <li>
-                                                        <p class="txt1">2023</p>
-                                                        <p class="txt2">웹디자인기능사</p>
-                                                    </li>
-                                                    <li>
-                                                        <p class="txt1">2022</p>
-                                                        <p class="txt2">GTQ 1급</p>
-                                                    </li>
-                                                    <li>
-                                                        <p class="txt1">2022</p>
-                                                        <p class="txt2">운전면허 2종보통</p>
-                                                    </li>
-                                                    <!-- <li>
-                                                        <p class="txt1">Phone</p>
-                                                        <p class="txt2">010-9464-7963</p>
-                                                    </li>
-                                                    <li>
-                                                        <p class="txt1">Mail</p>
-                                                        <p class="txt2">cjstkth0999@naver.com</p>
-                                                    </li> -->
-                                                </ul>
-                                            </div>
+                                    </div>
+                                    <!-- 자격증 -->
+                                    <div class="col-md-3 col-sm-6 wow fadeIn skillSize" data-wow-delay=".6s">
+                                        <div class="skill-content">
+                                            <!-- <i class="fa fa-edit fa-4x"></i> -->
+                                            <h3>CERTIFICATE</h3>
+                                            <ul>
+                                                <li>
+                                                    <p class="txt1">2023</p>
+                                                    <p class="txt2">웹디자인기능사</p>
+                                                </li>
+                                                <li>
+                                                    <p class="txt1">2022</p>
+                                                    <p class="txt2">GTQ 1급</p>
+                                                </li>
+                                                <li>
+                                                    <p class="txt1">2022</p>
+                                                    <p class="txt2">운전면허 2종보통</p>
+                                                </li>
+                                                <!-- <li>
+                                                    <p class="txt1">Phone</p>
+                                                    <p class="txt2">010-9464-7963</p>
+                                                </li>
+                                                <li>
+                                                    <p class="txt1">Mail</p>
+                                                    <p class="txt2">cjstkth0999@naver.com</p>
+                                                </li> -->
+                                            </ul>
                                         </div>
-                                        <!-- 경력 -->
-                                        <div class="col-md-3 col-sm-6 wow fadeIn wdSize" data-wow-delay=".4s">
-                                            <div class="about-content01">
-                                                <!-- <i class="fa fa-tablet fa-4x"></i> -->
-                                                <h3>EDUCATON</h3>
-                                                <ul>
-                                                    <li>
-                                                        <p class="txt1">2023</p>
-                                                        <p class="txt2">UI/UX 웹퍼블리셔&프론트엔드 웹개발<br> 실무 과정 수료</p>
-                                                    </li>
-                                                    <li>
-                                                        <p class="txt1">2023</p>
-                                                        <p class="txt2">대림대학교 스마트소프트웨어학과 졸업</p>
-                                                    </li>
-                                                    <li>
-                                                        <p class="txt1">2021</p>
-                                                        <p class="txt2">대림대학교 모바일인터넷과 졸업</p>
-                                                    </li>
-                                                    <li>
-                                                        <p class="txt1">2018</p>
-                                                        <p class="txt2">서울 금천고등학교 졸업</p>
-                                                    </li>
-                                                </ul>
-                                            </div>
+                                    </div>
+                                    <!-- 경력 -->
+                                    <div class="col-md-3 col-sm-6 wow fadeIn wdSize" data-wow-delay=".4s">
+                                        <div class="about-content01">
+                                            <!-- <i class="fa fa-tablet fa-4x"></i> -->
+                                            <h3>EDUCATON</h3>
+                                            <ul>
+                                                <li>
+                                                    <p class="txt1">2023</p>
+                                                    <p class="txt2">UI/UX 웹퍼블리셔&프론트엔드 웹개발<br> 실무 과정 수료</p>
+                                                </li>
+                                                <li>
+                                                    <p class="txt1">2023</p>
+                                                    <p class="txt2">대림대학교 스마트소프트웨어학과 졸업</p>
+                                                </li>
+                                                <li>
+                                                    <p class="txt1">2021</p>
+                                                    <p class="txt2">대림대학교 모바일인터넷과 졸업</p>
+                                                </li>
+                                                <li>
+                                                    <p class="txt1">2018</p>
+                                                    <p class="txt2">서울 금천고등학교 졸업</p>
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="con2">
-                                    <!-- 스킬 -->
-                                    <div id="s-team" class="section">
-                                        <div class="b-skills">
-                                            <div class="skillContainer">
-                                                <h3>CERTIFICATE</h3>
-                                                <div class="row">
-                                                    <div class="col-xs-12 col-sm-6 col-md-3">
-                                                        <div class="skill-item center-block">
-                                                            <div class="chart-container">
-                                                                <div class="chart " data-percent="85" data-bar-color="#333">
-                                                                    <span class="percent" data-after="%">85</span>
-                                                                </div>
+                            </div>
+                            <div class="con2">
+                                <!-- 스킬 -->
+                                <div id="s-team" class="section">
+                                    <div class="b-skills">
+                                        <div class="skillContainer">
+                                            <h3>CERTIFICATE</h3>
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-6 col-md-3">
+                                                    <div class="skill-item center-block">
+                                                        <div class="chart-container">
+                                                            <div class="chart " data-percent="85" data-bar-color="#333">
+                                                                <span class="percent" data-after="%">85</span>
                                                             </div>
-                                                            <p>HTML/CSS</p>
                                                         </div>
+                                                        <p>HTML/CSS</p>
                                                     </div>
-                                                    <div class="col-xs-12 col-sm-6 col-md-3">
-                                                        <div class="skill-item center-block">
-                                                            <div class="chart-container">
-                                                                <div class="chart " data-percent="80" data-bar-color="#333">
-                                                                    <span class="percent" data-after="%">80</span>
-                                                                </div>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-6 col-md-3">
+                                                    <div class="skill-item center-block">
+                                                        <div class="chart-container">
+                                                            <div class="chart " data-percent="80" data-bar-color="#333">
+                                                                <span class="percent" data-after="%">80</span>
                                                             </div>
-                                                            <p>PHOTHSHOP</p>
                                                         </div>
+                                                        <p>PHOTHSHOP</p>
                                                     </div>
-                                                    <div class="col-xs-12 col-sm-6 col-md-3">
-                                                        <div class="skill-item center-block">
-                                                            <div class="chart-container">
-                                                                <div class="chart " data-percent="80" data-bar-color="#333">
-                                                                    <span class="percent" data-after="%">80</span>
-                                                                </div>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-6 col-md-3">
+                                                    <div class="skill-item center-block">
+                                                        <div class="chart-container">
+                                                            <div class="chart " data-percent="80" data-bar-color="#333">
+                                                                <span class="percent" data-after="%">80</span>
                                                             </div>
-                                                            <p>ILLUSTRATOR</p>
                                                         </div>
+                                                        <p>ILLUSTRATOR</p>
                                                     </div>
-                                                    <div class="col-xs-12 col-sm-6 col-md-3">
-                                                        <div class="skill-item center-block">
-                                                            <div class="chart-container">
-                                                                <div class="chart " data-percent="82" data-bar-color="#333">
-                                                                    <span class="percent" data-after="%">82</span>
-                                                                </div>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-6 col-md-3">
+                                                    <div class="skill-item center-block">
+                                                        <div class="chart-container">
+                                                            <div class="chart " data-percent="82" data-bar-color="#333">
+                                                                <span class="percent" data-after="%">82</span>
                                                             </div>
-                                                            <p>FIGMA</p>
                                                         </div>
+                                                        <p>FIGMA</p>
                                                     </div>
-                                                    <div class="col-xs-12 col-sm-6 col-md-3">
-                                                        <div class="skill-item center-block">
-                                                            <div class="chart-container">
-                                                                <div class="chart " data-percent="70" data-bar-color="#333">
-                                                                    <span class="percent" data-after="%">70</span>
-                                                                </div>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-6 col-md-3">
+                                                    <div class="skill-item center-block">
+                                                        <div class="chart-container">
+                                                            <div class="chart " data-percent="70" data-bar-color="#333">
+                                                                <span class="percent" data-after="%">70</span>
                                                             </div>
-                                                            <p>JS</p>
                                                         </div>
+                                                        <p>JS</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -352,22 +350,62 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section id="cafe" class="section">
-            <div class="container-fluid">
-                <div class="wow fadeIn tit01">
-                    <!-- <p>003</p> -->
-                    <h1>CMS TUNEING</h1>
-                    <p>CAFE24<br>
-                        쇼핑몰 솔루션 사용하였습니다.
-                    </p>
+        </div>
+    </section>
+    <section id="cafe" class="full">
+        <div class="container-fluid">
+            <div class="wow fadeIn tit01">
+                <!-- <p>003</p> -->
+                <h1>CMS TUNEING</h1>
+                <p>CAFE24<br>
+                    쇼핑몰 솔루션 사용하였습니다.
+                </p>
+            </div>
+            <div class="siteInfo">
+                <div class="leftTit">
+                    <!-- <h3>무직타이거</h3>
+                    <p>무직타이거의 컨셉을 최대한 살려<br>
+                        쇼핑몰 사이트를 작업했습니다.
+                    </p> -->
+                    <dl>
+                        <dt>컨셉</dt>
+                        <dd>레이아웃을 크게 잡아 제작했습니다.</dd>
+                        <dt>TOOL</dt>
+                        <dd>HTML, CSS, Photoshop, JQuery</dd>
+                        <dt>프로젝트 참여도</dt>
+                        <dd>100%</dd>
+                        <dt>프로젝트 구성</dt>
+                        <dd>CAFE24 CMS 사용</dd>
+                    </dl>
+                    <button class="button" type="button" onclick="window.open('https://hyewon0699.cafe24.com')">VIEW</button>
+                    <!-- <a href="https://hyewon0699.cafe24.com/" target="_blank">VIEW</a> -->
                 </div>
-                <div class="siteInfo">
-                    <div class="leftTit">
-                        <!-- <h3>무직타이거</h3>
-                        <p>무직타이거의 컨셉을 최대한 살려<br>
-                            쇼핑몰 사이트를 작업했습니다.
-                        </p> -->
+                <div class="siteImg">
+                    <div class="img">
+                        <!-- <img src="./img/siteimg/mockup_desktop01.png" alt=""> -->
+                    </div>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="hardCoding" class="full">
+        <div class="container-fluid">
+            <div class="wow fadeIn tit01">
+                <!-- <p>004</p> -->
+                <h1>HARD CODING</h1>
+                <p>생각한 집</p>
+                <!-- <p>HTML & CSS & jQuery</p> -->
+            </div>
+            <div class="siteInfo">
+                <div class="siteImg">
+                    <div class="img">
+                        <!-- <img src="./img/siteimg/mockup_desktop01.png" alt=""> -->
+                    </div>
+                    <span></span>
+                </div>
+                <div class="rightCon">
+                    <div class="rightTit">
                         <dl>
                             <dt>컨셉</dt>
                             <dd>레이아웃을 크게 잡아 제작했습니다.</dd>
@@ -376,146 +414,106 @@
                             <dt>프로젝트 참여도</dt>
                             <dd>100%</dd>
                             <dt>프로젝트 구성</dt>
-                            <dd>CAFE24 CMS 사용</dd>
+                            <dd>반응형웹</dd>
                         </dl>
-                        <button class="button" type="button" onclick="window.open('https://hyewon0699.cafe24.com')">VIEW</button>
+                    </div>
+                    <div class="plusBtn">
+                        <button class="button1" type="button" onclick="window.open('http://hyewon99.dothome.co.kr/')">View website</button>
+                        <button class="button2" type="button" onclick="window.open('https://www.figma.com/file/KJDrNBXyw5vJGLuL3xgFoQ/%EC%95%88%ED%98%9C%EC%9B%90_%EC%84%A4%EA%B3%84?node-id=701%3A90&t=3KYy6ajWE1iV700J-1')">Figma wireframe</button>
+                        <a href="./downfile/thought house_proposal.pdf" download target="_blank"><button class="button3" type="button">proposal</button></a>
+                        <a href="./downfile/thought house_storyboard.pdf" download target="_blank"><button class="button4" type="button">storyboard</button></a>
+                        <!-- <a href="./img/resiteimg/resite_smoothie.png" class="mix identity"><button class="button3" type="button">proposal</button></a> -->
                         <!-- <a href="https://hyewon0699.cafe24.com/" target="_blank">VIEW</a> -->
                     </div>
-                    <div class="siteImg">
-                        <div class="img">
-                            <!-- <img src="./img/siteimg/mockup_desktop01.png" alt=""> -->
-                        </div>
-                        <span></span>
-                    </div>
                 </div>
             </div>
-        </section>
-        <section id="hardCoding" class="section">
-            <div class="container-fluid">
-                <div class="wow fadeIn tit01">
-                    <!-- <p>004</p> -->
-                    <h1>HARD CODING</h1>
-                    <p>생각한 집</p>
-                    <!-- <p>HTML & CSS & jQuery</p> -->
-                </div>
-                <div class="siteInfo">
-                    <div class="siteImg">
-                        <div class="img">
-                            <!-- <img src="./img/siteimg/mockup_desktop01.png" alt=""> -->
-                        </div>
-                        <span></span>
-                    </div>
-                    <div class="rightCon">
-                        <div class="rightTit">
-                            <dl>
-                                <dt>컨셉</dt>
-                                <dd>레이아웃을 크게 잡아 제작했습니다.</dd>
-                                <dt>TOOL</dt>
-                                <dd>HTML, CSS, Photoshop, JQuery</dd>
-                                <dt>프로젝트 참여도</dt>
-                                <dd>100%</dd>
-                                <dt>프로젝트 구성</dt>
-                                <dd>반응형웹</dd>
-                            </dl>
-                        </div>
-                        <div class="plusBtn">
-                            <button class="button1" type="button" onclick="window.open('http://hyewon99.dothome.co.kr/')">View website</button>
-                            <button class="button2" type="button" onclick="window.open('https://www.figma.com/file/KJDrNBXyw5vJGLuL3xgFoQ/%EC%95%88%ED%98%9C%EC%9B%90_%EC%84%A4%EA%B3%84?node-id=701%3A90&t=3KYy6ajWE1iV700J-1')">Figma wireframe</button>
-                            <a href="./downfile/thought house_proposal.pdf" download target="_blank"><button class="button3" type="button">proposal</button></a>
-                            <a href="./downfile/thought house_storyboard.pdf" download target="_blank"><button class="button4" type="button">storyboard</button></a>
-                            <!-- <a href="./img/resiteimg/resite_smoothie.png" class="mix identity"><button class="button3" type="button">proposal</button></a> -->
-                            <!-- <a href="https://hyewon0699.cafe24.com/" target="_blank">VIEW</a> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="reSite" class="section">
-            <div class="siteWrap">
-                <div class="wow fadeIn tit01">
-                    <!-- <p>005</p> -->
-                    <h1>RENEWAL SITE</h1>
-                    <!-- <p>생각한 집</p> -->
-                    <!-- <p>HTML & CSS & jQuery</p> -->
-                </div>
-                <!-- resite 슬라이드 부분 -->
-                    <div class="single-item">
-                        <div class="resiteGroup1">
-                            <div class="resiteFlex">
-                                <div class="resiteText">
-                                    <dl>
-                                        <dt>컨셉</dt>
-                                        <dd>레이아웃을 크게 잡아 제작했습니다.</dd>
-                                        <dt>TOOL</dt>
-                                        <dd>HTML, CSS, Photoshop, JQuery</dd>
-                                        <dt>프로젝트 참여도</dt>
-                                        <dd>100%</dd>
-                                        <dt>프로젝트 구성</dt>
-                                        <dd>반응형웹</dd>
-                                    </dl>
-                                    <a href="http://hyewon99.dothome.co.kr/renewalpage/SSG/index.html" class="reBtn" target="_blank">Hover me</a>
-                                </div>
-                                
-                                <div class="resiteImg"></div>
+    <section id="reSite" class="full">
+        <div class="siteWrap">
+            <div class="wow fadeIn tit01">
+                <!-- <p>005</p> -->
+                <h1>RENEWAL SITE</h1>
+                <!-- <p>생각한 집</p> -->
+                <!-- <p>HTML & CSS & jQuery</p> -->
+            </div>
+            <!-- resite 슬라이드 부분 -->
+                <div class="single-item">
+                    <div class="resiteGroup1">
+                        <div class="resiteFlex">
+                            <div class="resiteText">
+                                <dl>
+                                    <dt>컨셉</dt>
+                                    <dd>레이아웃을 크게 잡아 제작했습니다.</dd>
+                                    <dt>TOOL</dt>
+                                    <dd>HTML, CSS, Photoshop, JQuery</dd>
+                                    <dt>프로젝트 참여도</dt>
+                                    <dd>100%</dd>
+                                    <dt>프로젝트 구성</dt>
+                                    <dd>반응형웹</dd>
+                                </dl>
+                                <a href="http://hyewon99.dothome.co.kr/renewalpage/SSG/index.html" class="reBtn" target="_blank">Hover me</a>
                             </div>
+                            
+                            <div class="resiteImg"></div>
                         </div>
-                        <div class="resiteGroup2">
-                            <div class="resiteFlex">
-                                <div class="resiteText">
-                                    <dl>
-                                        <dt>컨셉</dt>
-                                        <dd>레이아웃을 크게 잡아 제작했습니다.</dd>
-                                        <dt>TOOL</dt>
-                                        <dd>HTML, CSS, Photoshop, JQuery</dd>
-                                        <dt>프로젝트 참여도</dt>
-                                        <dd>100%</dd>
-                                        <dt>프로젝트 구성</dt>
-                                        <dd>반응형웹</dd>
-                                    </dl>
-                                    <a href="http://hyewon99.dothome.co.kr/renewalpage/SMOOTHIE/index.html" class="reBtn" target="_blank">Hover me</a>
-                                </div>
-                                
-                                <div class="resiteImg"></div>
-                            </div>
-                        </div>
-                        <div class="resiteGroup3">
-                            <div class="resiteFlex">
-                                <div class="resiteText">
-                                    <dl>
-                                        <dt>컨셉</dt>
-                                        <dd>레이아웃을 크게 잡아 제작했습니다.</dd>
-                                        <dt>TOOL</dt>
-                                        <dd>HTML, CSS, Photoshop, JQuery</dd>
-                                        <dt>프로젝트 참여도</dt>
-                                        <dd>100%</dd>
-                                        <dt>프로젝트 구성</dt>
-                                        <dd>반응형웹</dd>
-                                    </dl>
-                                    <a href="#" class="reBtn" target="_blank">Hover me</a>
-                                </div>
-                                
-                                <div class="resiteImg"></div>
-                            </div>
-                        </div>
-                        <!-- <div>4</div>
-                        <div>5</div> -->
                     </div>
-            </div>
-        </section>
-        <!-- todo list 부분 -->
-        <section id="toDoList" class="section">
-            <div class="listWrap">
-                <div class="wow fadeIn tit01">
-                    <!-- <p>005</p> -->
-                    <h1>TODO LIST</h1>
-                    <p>바닐라 자바스크립트로 작업</p>
-                    <!-- <p>HTML & CSS & jQuery</p> -->
+                    <div class="resiteGroup2">
+                        <div class="resiteFlex">
+                            <div class="resiteText">
+                                <dl>
+                                    <dt>컨셉</dt>
+                                    <dd>레이아웃을 크게 잡아 제작했습니다.</dd>
+                                    <dt>TOOL</dt>
+                                    <dd>HTML, CSS, Photoshop, JQuery</dd>
+                                    <dt>프로젝트 참여도</dt>
+                                    <dd>100%</dd>
+                                    <dt>프로젝트 구성</dt>
+                                    <dd>반응형웹</dd>
+                                </dl>
+                                <a href="http://hyewon99.dothome.co.kr/renewalpage/SMOOTHIE/index.html" class="reBtn" target="_blank">Hover me</a>
+                            </div>
+                            
+                            <div class="resiteImg"></div>
+                        </div>
+                    </div>
+                    <div class="resiteGroup3">
+                        <div class="resiteFlex">
+                            <div class="resiteText">
+                                <dl>
+                                    <dt>컨셉</dt>
+                                    <dd>레이아웃을 크게 잡아 제작했습니다.</dd>
+                                    <dt>TOOL</dt>
+                                    <dd>HTML, CSS, Photoshop, JQuery</dd>
+                                    <dt>프로젝트 참여도</dt>
+                                    <dd>100%</dd>
+                                    <dt>프로젝트 구성</dt>
+                                    <dd>반응형웹</dd>
+                                </dl>
+                                <a href="#" class="reBtn" target="_blank">Hover me</a>
+                            </div>
+                            
+                            <div class="resiteImg"></div>
+                        </div>
+                    </div>
+                    <!-- <div>4</div>
+                    <div>5</div> -->
                 </div>
-                <div class="listImg"></div>
+        </div>
+    </section>
+    <!-- todo list 부분 -->
+    <section id="toDoList" class="full">
+        <div class="listWrap">
+            <div class="wow fadeIn tit01">
+                <!-- <p>005</p> -->
+                <h1>TODO LIST</h1>
+                <p>바닐라 자바스크립트로 작업</p>
+                <!-- <p>HTML & CSS & jQuery</p> -->
             </div>
-        </section>
-    </div>
+            <div class="listImg"></div>
+        </div>
+    </section>
 
 
             <!-- Team Section -->
@@ -1528,9 +1526,9 @@
     <script src="./js/main.js"></script>
 
     <!-- 풀페이지 js -->
-    <script src="./fullpage/jquery.fullpage.min.js"></script>
+    <!-- <script src="./fullpage/jquery.fullpage.min.js"></script>
     <script src="./fullpage/jquery.fullpage.extensions.min.js"></script>
-    <script src="./fullpage/examples.js"></script>
+    <script src="./fullpage/examples.js"></script> -->
 
     <script>
 

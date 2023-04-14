@@ -7,9 +7,7 @@ body{
 ul,ol,dl{
     list-style: none;
 }
-section{
-    padding: 145px 0 !important;
-}
+
 /* 스노우 배경 */
 /* Snow background */
 
@@ -82,8 +80,8 @@ header{
     left: 0; */
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to right, #a6d900 0%, #ff4454 100%);
-    opacity: 0.5;
+    background: linear-gradient(to right, #a6d900 0%, #ff7580 100%);
+    opacity: 0.8;
     animation: huerotator 6s infinite alternate;
 }
 @keyframes huerotator {
@@ -104,7 +102,23 @@ h1{
     /* font-family: 'Noto Sans KR', sans-serif; */
     margin-bottom: 25px;
 }
-
+section{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+#header .proTit{
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    transform: rotate(90deg) translateY(-100%);
+    transform-origin: top left;
+    font-size: 25px;
+    color: #fff;
+    letter-spacing: 4px;
+    font-family: 'Gowun Dodum', sans-serif !important;
+}
 /*마우스 따라다니는 아이콘*/
 
 .ani_on{
@@ -163,13 +177,12 @@ header .intro-content{
     width: 100% !important;
     height: 65% !important;
 }
-
 header .intro-content svg{
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 55%;
+    left: 50%;
     text-align: center;
-    /* transform: translate(-50%, -50%); */
+    transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
 }
@@ -236,7 +249,11 @@ header .intro-content .titGroup04 > p{
 #page-top .navbar-inverse .navbar-nav > li > a{
     border-radius: 50% !important;
 }
-
+#page-top{}
+#page-top{}
+#page-top{}
+#page-top{}
+#page-top{}
 
 
 
@@ -379,6 +396,9 @@ header .intro-content .titGroup04 > p{
 
 /* 풀페이지 */
 
+
+
+
 /*탑버튼*/
 .goToTop {
     position: fixed;
@@ -459,7 +479,7 @@ text {
 /*about부분*/
 #about{
 	background: #fff;
-    height: 100%;
+    padding: 145px 0;
 }
 #aboutWrap{
     width: 1400px;
@@ -469,12 +489,33 @@ text {
     max-width: 1400px;
 }
 #about .photo{
-    width: 385px;
-    height: 385px;
+    width: 330px;
+    height: 330px;
     background-color: #ccc;
     margin-right: 65px;
     border-radius: 50%;
+    position: relative;
 }
+#about .photo .phoImg{
+    position: absolute;
+    top: -23%;
+    left: -11%;
+    width: 410px;
+    height: 410px;
+    background-image: url('../img/photoImg2-1.png');
+    background-size: contain;
+    background-position: top;
+    border-radius: 50%;
+}
+/* #about .photo::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('../img/photoImg.png') no-repeat;
+    background-size: cover;
+} */
 #about .content-row{
     display: flex;
     flex-direction: column;
@@ -693,7 +734,7 @@ text {
 /*cage24 부분*/
 #cafe{
     background: #f9f9f9;
-    height: 100%;
+    padding: 145px 0;
 }
 #cafe .tit01{
     text-align: left;
@@ -723,12 +764,15 @@ text {
 
 }
 #cafe .leftTit{
-    width: 480px;
+    width: 487px;
+}
+#cafe .leftTit h3{
+    margin-bottom: 5%;
 }
 #cafe .siteInfo{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 #cafe h1::after{
     content: "02";
@@ -751,7 +795,7 @@ text {
 }
 #cafe .siteInfo .leftTit dl dt{
     width: 30%;
-    line-height: 33px;
+    line-height: 35px;
 }
 #cafe .siteInfo .leftTit dl dd{
     width: 70%;
@@ -797,7 +841,7 @@ text {
 /*하드코딩 부분*/
 #hardCoding{
     background: #fff;
-    height: 100%;
+    padding: 145px 0;
 }
 #hardCoding .tit01{
     text-align: left;
@@ -869,7 +913,7 @@ text {
     line-height: 33px;
 }
 #hardCoding .siteInfo .rightTit dl dd{
-    width: 42%;
+    width: 70%;
     line-height: 33px;
 }
 /* #cafe .siteInfo .leftTit a{
@@ -994,7 +1038,7 @@ text {
 /*리뉴얼 사이트*/
 #reSite{
     background-color: #f9f9f9;
-    height: 100%;
+    padding: 145px 0;
 }
 #reSite .siteWrap{
     width: 1400px;
@@ -1164,7 +1208,7 @@ text {
 /*todo list 부분*/
 #toDoList{
     background: #fff;
-    height: 100%;
+    padding: 145px 0;
 }
 #toDoList .listWrap{
     width: 1400px;

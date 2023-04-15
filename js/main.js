@@ -58,22 +58,8 @@ $(function(){
         $(".goToTop").click(function(){
             window.scrollTo({top : 0, behavior: 'smooth'}); 
         });
-    
-        // // 풀페이지
-        // $(document).ready(function() {
-        //     $('#fullpage').fullpage({
-        //         //options here
-        //         licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
-        //         autoScrolling:true,
-        //         scrollHorizontally: true
-        //     });
-        // });
-        // new fullpage('#fullpage', {
-        //     sectionsColor: ['yellow', 'orange', '#C0C0C0', '#ADD8E6'],
-            
-        //     // Get your license at https://alvarotrigo.com/fullPage/pricing/
-        //     licenseKey: 'YOUR LICENSE KEY HERE '
-        // });
+
+        // 풀페이지
         window.onload = function () {
             var elm = ".full";
             $(elm).each(function (index) {
@@ -116,5 +102,21 @@ $(function(){
             });
         }
     
+        // 디자인 슬라이드
+        var swiper = new Swiper("#design .mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+            el: "#design .swiper-pagination",
+            clickable: true
+        },
+        navigation: {
+            nextEl: "#design .swiper-button-next",
+            prevEl: "#design .swiper-button-prev"
+        },
+        observer : true, //옵션
+        observerParents :true
+        });
         
     });

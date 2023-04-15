@@ -625,9 +625,6 @@ text {
     justify-content: space-between;
     align-items: center;
 }
-#about .aboutFlex2 .con2{
-    margin-top: 20px;
-}
 #about{}
 
 
@@ -642,7 +639,7 @@ text {
     width: 17%;
 }
 #about .con2 .b-skills{
-	padding-top: 10px;
+	/* padding-top: 10px; */
 	text-align: center;
 }
 
@@ -1240,6 +1237,35 @@ text {
 #toDoList{}
 #toDoList{}
 #toDoList{}
-#toDoList{}
-#toDoList{}
-#toDoList{}
+
+/* 리액트 */
+#react{
+    background: #fff;
+    padding: 145px 0;
+}
+#react .listWrap{
+    width: 1400px;
+    margin: 0 auto;
+}
+#react h1::after{
+    content: "06";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    font-size: 3.8em;
+    transform: translate(-76%, -54%);
+    background: linear-gradient(90deg, #f8be67 0%, #ee6290 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: -1;
+    letter-spacing: -2px;
+}
+#react .reactImg{
+    width: 1000px;
+    height: 500px;
+    background: #ccc;
+    /* background: url('../img/todolist/todo_list2.png') no-repeat;
+    background-size: cover; */
+    margin: 0 auto;
+}

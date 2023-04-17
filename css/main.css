@@ -745,6 +745,7 @@ text {
     /* border-radius: 10px; */
     position: relative;
     border: 1px solid #eee;
+    border-radius: 20px;
 }
 
 
@@ -866,6 +867,7 @@ text {
     /* border-radius: 10px; */
     position: relative;
     border: 1px solid #eee;
+    border-radius: 20px;
 }
 /* #hardCoding .siteInfo .siteImg .img img{
     position: absolute;
@@ -1072,7 +1074,7 @@ text {
     background: url('../img/resiteimg/resite_ssg.png') no-repeat;
     background-size: cover;
     border: 1px solid #eee;
-
+    border-radius: 20px;
 }
 #reSite .single-item .resiteGroup1 .resiteImg:hover{
     animation: resiteScroll 13s ease infinite;
@@ -1095,6 +1097,7 @@ text {
     background: url('../img/resiteimg/resite_smoothie.png') no-repeat;
     background-size: cover;
     border: 1px solid #eee;
+    border-radius: 20px;
 }
 #reSite .single-item .resiteGroup2 .resiteImg:hover{
     animation: resiteScroll 13s ease infinite;
@@ -1110,6 +1113,7 @@ text {
     background: #ccc;
     background-size: cover;
     border: 1px solid #eee;
+    border-radius: 20px;
 }
 #reSite .single-item .resiteGroup3 .resiteImg:hover{
     animation: resiteScroll 13s ease infinite;
@@ -1226,14 +1230,84 @@ text {
     letter-spacing: -2px;
 }
 #toDoList .listImg{
-    width: 1000px;
-    height: 500px;
+    width: 800px;
+    height: 480px;
     /* background: #ccc; */
     background: url('../img/todolist/todo_list2.png') no-repeat;
     background-size: cover;
-    margin: 0 auto;
+    background-position: center;
+    border-radius: 20px;
 }
-#toDoList{}
+#toDoList .siteInfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#toDoList .leftTit{
+    width: 487px;
+}
+#toDoList .leftTit h3{
+    margin-bottom: 5%;
+}
+#toDoList .siteInfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#toDoList h1::after{
+    content: "05";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    font-size: 3.8em;
+    transform: translate(-76%, -54%);
+    background: linear-gradient(90deg, #f8be67 0%, #ee6290 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: -1;
+    letter-spacing: -2px;
+}
+#toDoList .siteInfo .leftTit dl{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
+#toDoList .siteInfo .leftTit dl dt{
+    width: 30%;
+    line-height: 35px;
+}
+#toDoList .siteInfo .leftTit dl dd{
+    width: 70%;
+    line-height: 33px;
+}
+
+#toDoList .button {
+    width: 140px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin-top: 13px;
+}
+
+#toDoList .button:hover {
+    background: linear-gradient(90deg, rgba(248,190,103,1) 0%, rgba(238,98,144,1) 100%);
+    /* background-color: #bb91e3; */
+    /* box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4); */
+    color: #fff;
+    transform: translateY(-7px);
+}
 #toDoList{}
 #toDoList{}
 #toDoList{}
@@ -1413,19 +1487,35 @@ img.mfp-img{
     transition: all 0.5s;
     border-radius: 15px;
 }
+#design .desList01 .okClick{
+    position: relative;
+}
 #design .desList01 .okClick a{
     display: block;
     line-height: 30px;
     font-size: 16px;
     color: #fff;
     width: 95px;
-    text-align: center;
+    text-align: left;
+    padding-left: 6%;
     margin: 0 auto;
     border: 1px solid #fff;
     border-radius: 50px;
+    transition: 0.6s ease;
+}
+#design .desList01 .okClick a:hover{
+    background: #222;
+    color: #fff;
+    border-color: #222;
 }
 #design .desList01 .caption a span{
-    margin-left: 10px;
+    position: absolute;
+    top: -7%;
+    left: 55%;
+    transition: all 0.5s;
+}
+#design .desList01 .caption a:hover span{
+    transform: translateX(5px);
 }
 #design .desList01 .caption .infoText{
     font-size: 1.3em;

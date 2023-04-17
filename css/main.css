@@ -269,7 +269,7 @@ header .intro-content .titGroup04 > p{
     top: 50px;
     right: 90px;
     border-radius: 50%;
-    z-index: 1000;
+    z-index: 2000;
     text-align: center;
     cursor: pointer;
 }
@@ -283,7 +283,7 @@ header .intro-content .titGroup04 > p{
     background: #fff;
     opacity: 0.9;
     /* background-image: radial-gradient(#8254e5, #66b3ff); */
-    z-index: 500;
+    z-index: 1000;
     transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
 }
 .navigation__nav{
@@ -304,19 +304,19 @@ header .intro-content .titGroup04 > p{
     align-items: center;
     list-style: none;
     position: absolute;
-    top: 50%;
-    left: 85%;
+    top: 53%;
+    left: 86%;
     transform: translate(-50%, -50%);
 }
 .navigation__item{
-    margin: 10px;
+    margin: 7px;
 }
 .navigation__link:link, .navigation__link:visited{
     --fill-color: #8988ff;
     position: relative;
     display: block;
     padding: 6px 0;
-    font: 700 5rem Raleway, sans-serif;
+    font: 700 4.3rem Raleway, sans-serif;
     text-decoration: none;
     text-transform: uppercase;
     -webkit-text-stroke: 2px var(--fill-color);
@@ -1261,9 +1261,13 @@ text {
     z-index: -1;
     letter-spacing: -2px;
 }
-#react .reactImg{
-    width: 1000px;
-    height: 500px;
+#react .reactImg ul{
+    display: flex;
+    padding-top: 2%;
+}
+#react .reactImg ul li{
+    width: 45%;
+    height: 400px;
     background: #ccc;
     /* background: url('../img/todolist/todo_list2.png') no-repeat;
     background-size: cover; */
@@ -1303,7 +1307,7 @@ text {
 #design .designWrap{
     width: 1400px;
     /* height: 100%; */
-    background: #ccc;
+    /* background: #ccc; */
     /* background: url('../img/todolist/todo_list2.png') no-repeat;
     background-size: cover; */
     margin: 0 auto;
@@ -1386,6 +1390,55 @@ img.mfp-img{
 @keyframes bounce{
     0% {transform: translateY(0);}
     100% {transform: translateY(-20px);}
+}
+
+/* 각 디자인 작업한거 오버 아래에서 박스나오는 것 */
+#design .desList01{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+#design .desList01 .caption{
+    position: absolute;
+    width: 100%;
+    font-size: 12px;
+    height: 83px;
+    bottom: -83px;
+    text-align: center;
+    padding: 35px 38px 35px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #FFF;
+    opacity: 0;
+    transition: all 0.5s;
+    border-radius: 15px;
+}
+#design .desList01 .okClick a{
+    display: block;
+    line-height: 30px;
+    font-size: 16px;
+    color: #fff;
+    width: 95px;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid #fff;
+    border-radius: 50px;
+}
+#design .desList01 .caption a span{
+    margin-left: 10px;
+}
+#design .desList01 .caption .infoText{
+    font-size: 1.3em;
+}
+#design .desList01 .caption h5{
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}  
+#design .desList01:hover .caption, .desList01:focus .caption {
+    opacity: 1;
+    bottom: 0;
+    height: 100%;
 }
 #design{}
 #design{}

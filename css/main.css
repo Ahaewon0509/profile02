@@ -269,7 +269,7 @@ header .intro-content .titGroup04 > p{
     top: 50px;
     right: 90px;
     border-radius: 50%;
-    z-index: 2000;
+    z-index: 1000;
     text-align: center;
     cursor: pointer;
 }
@@ -283,7 +283,7 @@ header .intro-content .titGroup04 > p{
     background: #fff;
     opacity: 0.9;
     /* background-image: radial-gradient(#8254e5, #66b3ff); */
-    z-index: 1000;
+    z-index: 500;
     transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
 }
 .navigation__nav{
@@ -292,7 +292,7 @@ header .intro-content .titGroup04 > p{
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 1500;
+    z-index: 500;
     opacity: 0;
     width: 0;
     transition: all 0.8s;
@@ -1530,7 +1530,20 @@ img.mfp-img{
     bottom: 0;
     height: 100%;
 }
-#design{}
+/* 팝업 닫는 X */
+.mfp-image-holder .mfp-close, .mfp-iframe-holder .mfp-close{
+    color: #222;
+    background: linear-gradient(90deg, rgba(248,190,103,1) 0%, rgba(238,98,144,1) 100%);
+    border-radius: 50%;
+    opacity: 1;
+    text-align: center;
+    padding-right: 0;
+    width: 50px;
+    height: 50px;
+    font-size: 2.5em;
+    top: 39px;
+    left: 105%;
+}
 #design{}
 #design{}
 #design{}

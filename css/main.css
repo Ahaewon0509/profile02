@@ -1335,19 +1335,27 @@ text {
     z-index: -1;
     letter-spacing: -2px;
 }
+
+/* 리액트 todolist 부분 */
 #react .reactImg ul{
     display: flex;
     padding-top: 2%;
 }
-#react .reactImg ul li{
-    width: 45%;
+#react .reactImg ul .reactList01{
+    width: 612px;
     height: 400px;
-    background: #ccc;
-    /* background: url('../img/todolist/todo_list2.png') no-repeat;
-    background-size: cover; */
+    /* background: #ccc; */
+    background: url('../img/todolist/reactToDoList.png') no-repeat;
+    background-size: cover;
+    background-position: center;
     margin: 0 auto;
 }
-#react{}
+#react .reactImg ul .reactList02{
+    width: 612px;
+    height: 400px;
+    background: #ccc;
+    margin: 0 auto;
+}
 #react{}
 #react{}
 #react{}

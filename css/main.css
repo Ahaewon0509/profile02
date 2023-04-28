@@ -8,6 +8,8 @@ ul,ol,dl{
     list-style: none;
 }
 
+
+
 /* 스노우 배경 */
 /* Snow background */
 
@@ -394,7 +396,29 @@ header .intro-content .titGroup04 > p{
 	}
 }
 
-/* 풀페이지 */
+/* 풀페이지 인디케이터*/
+#nav{ 
+    position: fixed; 
+    left: 2%; 
+    top: 50%; 
+    margin-top: -10px;
+    display: flex;
+    flex-direction: column;
+    z-index: 99;
+}
+#nav > a{ 
+    display: inline-block; 
+    margin: 6px;
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background: red;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+#nav > a.active{ 
+    background: #000;
+}
 
 
 

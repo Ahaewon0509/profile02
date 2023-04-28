@@ -95,7 +95,7 @@ header{
     filter: hue-rotate(360deg);
 }
 }
-h1{
+h2{
     position: relative;
     z-index: 9;
     font-family: 'Ubuntu', sans-serif !important;
@@ -606,7 +606,7 @@ text {
     text-align: left;
 }
 
-#about h1::after{
+#about h2::after{
     content: "01";
     position: absolute;
     top: 0;
@@ -772,7 +772,7 @@ text {
     align-items: center;
     justify-content: space-between;
 }
-#cafe h1::after{
+#cafe h2::after{
     content: "02";
     position: absolute;
     top: 0;
@@ -845,7 +845,7 @@ text {
     text-align: left;
     margin-bottom: 60px;
 }
-#hardCoding h1::after{
+#hardCoding h2::after{
     content: "03";
     position: absolute;
     top: 0;
@@ -1043,7 +1043,7 @@ text {
     width: 1400px;
     margin: 0 auto;
 }
-#reSite h1::after{
+#reSite h2::after{
     content: "04";
     position: absolute;
     top: 0;
@@ -1215,7 +1215,7 @@ text {
     width: 1400px;
     margin: 0 auto;
 }
-#toDoList h1::after{
+#toDoList h2::after{
     content: "05";
     position: absolute;
     top: 0;
@@ -1254,7 +1254,7 @@ text {
     align-items: center;
     justify-content: space-between;
 }
-#toDoList h1::after{
+#toDoList h2::after{
     content: "05";
     position: absolute;
     top: 0;
@@ -1321,7 +1321,7 @@ text {
     width: 1400px;
     margin: 0 auto;
 }
-#react h1::after{
+#react h2::after{
     content: "06";
     position: absolute;
     top: 0;
@@ -1372,7 +1372,7 @@ text {
     width: 1400px;
     margin: 0 auto;
 }
-#design h1::after{
+#design h2::after{
     content: "07";
     position: absolute;
     top: 0;

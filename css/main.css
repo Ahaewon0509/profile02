@@ -9,7 +9,6 @@ ul,ol,dl{
 }
 
 
-
 /* 스노우 배경 */
 /* Snow background */
 
@@ -404,24 +403,59 @@ header .intro-content .titGroup04 > p{
     margin-top: -10px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     z-index: 99;
+    gap: 3px;
 }
 #nav > a{ 
     display: inline-block; 
     margin: 6px;
     font-size: 0;
-    width: 10px;
-    height: 10px;
-    background: red;
+    width: 7px;
+    height: 7px;
+    background: #f8be67;
     border-radius: 50%;
     transition: all 0.3s;
 }
-#nav > a.active{ 
-    background: #000;
+#nav > a.active{
+    background: none;
+    transition: 0.4s;
 }
-
-
-
+#nav > a.active::after{ 
+    content: "";
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 17px;
+    height: 17px;
+    background: transparent;
+    border: 3px dotted #ee6290;
+    animation: rotate_border 10s linear infinite;
+    border-radius: 50%;
+}
+#nav .page{
+    position: relative;
+}
+#nav span{
+    position: absolute;
+    top: -6px;
+    left: 3px;
+    display: none;
+    width: 70px;
+    font-size: 12px;
+    color: #222;
+    margin-left: 20px;
+}
+@keyframes rotate_border{
+    100%{
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+}
+#nav a:hover span{
+    display: block;
+}
 
 /*탑버튼*/
 .goToTop {
@@ -1067,6 +1101,83 @@ text {
     width: 1400px;
     margin: 0 auto;
 }
+/* 각 메인 제목 애니메이션 효과 H2 */
+.titAni {
+    /* height: 100px; */
+    letter-spacing: -5px;
+}
+
+.titAni span {
+    position: relative;
+    top: 0px;
+    left: 0;
+    display: inline-block;
+    animation: titBounce 3s ease 0s infinite normal none running;
+    /* font-family: 'Titan One', cursive; */
+    font-size: 60px;
+    /* color: #FFF; */
+    /* text-shadow: 0 10px 10px rgba(0, 0, 0, .2); */
+    /* text-shadow: 0 1px 0 #e3e3e3,
+                    0 2px 0 #e3e3e3,
+                    0 3px 0 #e3e3e3,
+                    0 4px 0 #e3e3e3,
+                    0 5px 0 #e3e3e3,
+                    0 6px 0 transparent,
+                    0 7px 0 transparent,
+                    0 8px 0 transparent,
+                    0 9px 0 transparent,
+                    0 10px 10px rgba(0, 0, 0, .2); */
+}
+.titAni span:nth-of-type(1) { animation-delay: 0.3s; }
+.titAni span:nth-of-type(2) { animation-delay: 0.6s; }
+.titAni span:nth-of-type(3) { animation-delay: 0.9s; }
+.titAni span:nth-of-type(4) { animation-delay: 1.2s; }
+.titAni span:nth-of-type(5) { animation-delay: 1.5s; }
+.titAni span:nth-of-type(6) { animation-delay: 1.8s; }
+.titAni span:nth-of-type(7) { animation-delay: 2.1s; }
+.titAni span:nth-of-type(8) { animation-delay: 2.4s; }
+.titAni span:nth-of-type(9) { animation-delay: 2.7s; }
+.titAni span:nth-of-type(10) { animation-delay: 3s; }
+.titAni span:nth-of-type(11) { animation-delay: 3.3s; }
+
+
+@keyframes titBounce{
+    0%{
+        top: 0px;
+    }
+    20%{
+        top: -0.4rem;
+    }
+    40%{
+        top: 0px;
+    }
+    60%{
+        top: 0px;
+    }
+    80%{
+        top: 0px;
+    }
+    100%{
+        top: 0px;
+    }
+}
+/* @keyframes bounce {
+100% {
+    top: -7px;
+    text-shadow: 0 1px 0 #CCC,
+                0 2px 0 #CCC,
+                0 3px 0 #CCC,
+                0 4px 0 #CCC,
+                0 5px 0 #CCC,
+                0 6px 0 #CCC,
+                0 7px 0 #CCC,
+                0 8px 0 #CCC,
+                0 9px 0 #CCC,
+                0 50px 25px rgba(0, 0, 0, .2);
+}
+} */
+
+
 #reSite h2::after{
     content: "04";
     position: absolute;
@@ -1133,8 +1244,8 @@ text {
 #reSite .single-item .resiteGroup3 .resiteImg{
     width: 800px;
     height: 480px;
-    /* background: url('../img/resiteimg/resite_ssg.png') no-repeat; */
-    background: #ccc;
+    background: url('../img/resiteimg/resite_nasa.png') no-repeat;
+    /* background: #ccc; */
     background-size: cover;
     border: 1px solid #eee;
     border-radius: 20px;
@@ -1142,7 +1253,64 @@ text {
 #reSite .single-item .resiteGroup3 .resiteImg:hover{
     animation: resiteScroll 13s ease infinite;
 }
-
+#reSite .textBtnGroup1,
+#reSite .textBtnGroup2,
+#reSite .textBtnGroup3{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 35%;
+}
+#reSite .viewBtn1 ul,
+#reSite .viewBtn2 ul,
+#reSite .viewBtn3 ul{
+    padding-left: 0;
+    display: flex;
+    gap: 15px;
+}
+#reSite .viewBtn1 ul li a,
+#reSite .viewBtn2 ul li a,
+#reSite .viewBtn3 ul li a{
+    width: 140px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.7s ease-in;
+    cursor: pointer;
+    outline: none;
+    margin-top: 13px;
+}
+#reSite .viewBtn1 ul li:hover a,
+#reSite .viewBtn2 ul li:hover a,
+#reSite .viewBtn3 ul li:hover a {
+    /* background: linear-gradient(90deg, rgba(248,190,103,1) 0%, rgba(238,98,144,1) 100%); */
+    color: #fff;
+    transform: translateY(-7px);
+}
+#reSite .resiteText dl{
+    display: flex;
+    flex-flow: row wrap;
+}
+#reSite .resiteText dt{
+    width: 30%;
+    line-height: 35px;
+}
+#reSite .resiteText dd{
+    width: 70%;
+    line-height: 35px;
+}
+#reSite .dSty{
+    line-height: 30px !important;
+}
 
 /*슬라이드 버튼*/
 #reSite .slick-prev{
@@ -1194,18 +1362,13 @@ text {
 }
 #reSite .reBtn{
     text-decoration: none;
-    color: #222;
     font-family: sans-serif;
     font-size: 18px;
     line-height: 18px;
-    border: 2px solid #222;
     padding: 10px 0;
     position: relative;
-    transition: all 1s;
     overflow: hidden;
     display: block;
-    width: 110px;
-    height: 44px;
     text-align: center;
 }
 #reSite .reBtn:before {
@@ -1215,7 +1378,7 @@ text {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: #222;
+    background: linear-gradient(90deg, #f8be67 0%, #ee6290 100%);
     z-index: -1;
     transform: translateX(-100%);
     transition: all 1s;
@@ -1226,9 +1389,6 @@ text {
 #reSite .reBtn:hover {
     color: #fff;
 }
-#reSite .reBtn:active{}
-#reSite{}
-#reSite{}
 
 /*todo list 부분*/
 #toDoList{
@@ -1272,11 +1432,6 @@ text {
 }
 #toDoList .leftTit h3{
     margin-bottom: 5%;
-}
-#toDoList .siteInfo{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 #toDoList h2::after{
     content: "05";
@@ -1342,8 +1497,11 @@ text {
     padding: 145px 0;
 }
 #react .listWrap{
-    width: 1400px;
+    width: 1500px;
     margin: 0 auto;
+}
+#react .reactSlide{
+    margin-top: 37px;
 }
 #react h2::after{
     content: "06";
@@ -1360,29 +1518,216 @@ text {
     letter-spacing: -2px;
 }
 
+
 /* 리액트 todolist 부분 */
-#react .reactImg ul{
-    display: flex;
-    padding-top: 2%;
+
+/* 리액트 프로젝트 슬라이드 부분 */
+#react .tit01{
+    width: 1400px;
+    margin: 0 auto;
 }
-#react .reactImg ul .reactList01{
-    width: 612px;
-    height: 400px;
+#react .swiper {
+    width: 100%;
+    height: 100%;
+}
+#react .swiper-slide {
+    text-align: center;
+    font-size: 18px;
     /* background: #ccc; */
-    background: url('../img/todolist/reactToDoList.png') no-repeat;
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+#react .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#react .reactCon .listImg{
+    width: 800px;
+    height: 480px;
+    background: url(../img/todolist/reactToDoList2.png) no-repeat;
     background-size: cover;
     background-position: center;
-    margin: 0 auto;
+    border-radius: 20px;
+    border: 1px solid #eee;
 }
-#react .reactImg ul .reactList02{
-    width: 612px;
-    height: 400px;
-    background: #ccc;
-    margin: 0 auto;
+#react .listInfo{
+    width: 450px;
+    text-align: left;
 }
-#react{}
-#react{}
-#react{}
+#react .listInfo h3{
+    margin-bottom: 5%;
+}
+#react .toDoImg{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+#react .listInfo dl{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
+#react .listInfo dl dt{
+    width: 30%;
+    line-height: 35px;
+    font-size: 1em;
+}
+#react .listInfo dl dd{
+    width: 70%;
+    line-height: 33px;
+    font-size: 0.9em;
+}
+#react .button {
+    width: 140px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin-top: 13px;
+}
+
+#react .button:hover {
+    background: linear-gradient(90deg, rgba(248,190,103,1) 0%, rgba(238,98,144,1) 100%);
+    /* background-color: #bb91e3; */
+    /* box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4); */
+    color: #fff;
+    transform: translateY(-7px);
+}
+/* 리액트 쇼핑몰 설명 부분 */
+#react .reactCon2 .siteImg{
+    width: 800px;
+    height: 480px;
+    background: url(../img/reactShoping/main_page.png) no-repeat;
+    background-size: cover;
+    background-position: top;
+    border-radius: 20px;
+    border: 1px solid #eee;
+}
+#react .reactCon2 .siteImg:hover{
+    animation: nikeScroll 15s ease infinite;
+}
+@keyframes nikeScroll {
+    0% {
+    background-position-y: 0;
+}
+100% {
+    background-position-y: 100%;
+}
+}
+#react .siteInfo{
+    width: 450px;
+    text-align: left;
+}
+#react .siteInfo h3{
+    margin-bottom: 5%;
+}
+#react .siteNike{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+#react .siteInfo dl{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
+#react .siteInfo dl dt{
+    width: 30%;
+    line-height: 35px;
+    font-size: 1em;
+}
+#react .siteInfo dl dd{
+    width: 70%;
+    line-height: 33px;
+    font-size: 0.9em;
+}
+#react .siteInfo .button {
+    width: 140px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin-top: 13px;
+}
+
+#react .siteInfo .button:hover {
+    background: linear-gradient(90deg, rgba(248,190,103,1) 0%, rgba(238,98,144,1) 100%);
+    /* background-color: #bb91e3; */
+    /* box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4); */
+    color: #fff;
+    transform: translateY(-7px);
+}
+.swBtnGroup{
+    position: relative;
+    top: -250px;
+    left: 100%;
+    width: 7px;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+}
+#react .swiper-button-prev{
+    left: -90px;
+}
+#react .swiper-pagination{
+    width: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    top: 40%;
+    left: 96%;
+}
+
+#react .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet:nth-child(1){
+    width: 55px;
+    height: 55px;
+    background: url(../img/reactShoping/icon1.png) no-repeat;
+    background-size: 42px;
+    background-position: 5px 6px;
+    border: 2px dashed #ccc;
+    opacity: 1;
+    transition: 0.4s;
+}
+#react .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet:nth-child(1):hover{
+    border-color: #ee6290;
+}
+#react .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet:nth-child(2):hover{
+    border-color: #ee6290;
+}
+#react .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet:nth-child(2){
+    width: 55px;
+    height: 55px;
+    background: url(../img/reactShoping/icon2.png) no-repeat;
+    background-size: 47px;
+    background-position: 2px 2px;
+    opacity: 1;
+    border: 2px dashed #ccc;
+    transition: 0.4s;
+}
 #react{}
 #react{}
 #react{}
@@ -1428,11 +1773,7 @@ text {
     justify-content: space-around;
     padding-top: 3%;
 }
-/* #design .designGroup01 .poster01,
-#design .designGroup01 .poster02,
-#design .designGroup01 .poster03{
-    width: 100%;
-} */
+
 #design .designGroup .poster01 ul,
 #design .designGroup .poster02 ul,
 #design .designGroup .poster03 ul,
@@ -1576,11 +1917,9 @@ img.mfp-img{
     top: 39px;
     left: 105%;
 }
-#design{}
-#design{}
-#design{}
-#design{}
-#design{}
-#design{}
-#design{}
-#design{}
+
+/* 푸터 부분 */
+#ending{
+    padding: 300px 0 153px 0;
+}
+.footer{}

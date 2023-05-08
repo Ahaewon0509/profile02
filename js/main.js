@@ -123,4 +123,18 @@ $(function(){
         observerParents :true
         });
         
+        // 리객트 프로젝트 슬라이드
+        var swiper = new Swiper("#react .mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            keyboard: {
+                enabled: true,
+            },
+            pagination: {
+                el: "#react  .swiper-pagination",
+                clickable: true,
+            },
+            observer : true, //옵션
+            observerParents :true
+            });
     });

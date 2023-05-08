@@ -927,12 +927,6 @@ text {
     border: 1px solid #eee;
     border-radius: 20px;
 }
-/* #hardCoding .siteInfo .siteImg .img img{
-    position: absolute;
-    top: -3%;
-    left: 0;
-    width: 550px;
-} */
 
 #hardCoding .siteInfo .siteImg .img:hover{
     animation: siteScroll 12s ease infinite;
@@ -964,9 +958,10 @@ text {
     display: flex;
     flex-flow: row wrap;
     width: 100%;
+    row-gap: 9px;
 }
 #hardCoding .siteInfo .rightTit dl dt{
-    width: 30%;
+    width: 27%;
     line-height: 33px;
 }
 #hardCoding .siteInfo .rightTit dl dd{
@@ -1299,6 +1294,7 @@ text {
 #reSite .resiteText dl{
     display: flex;
     flex-flow: row wrap;
+    row-gap: 10px;
 }
 #reSite .resiteText dt{
     width: 30%;
@@ -1526,11 +1522,11 @@ text {
     width: 1400px;
     margin: 0 auto;
 }
-#react .swiper {
+#react .swiper{
     width: 100%;
     height: 100%;
 }
-#react .swiper-slide {
+#react .swiper-slide{
     text-align: center;
     font-size: 18px;
     /* background: #ccc; */
@@ -1539,7 +1535,7 @@ text {
     justify-content: center;
     align-items: center;
 }
-#react .swiper-slide img {
+#react .swiper-slide img{
     display: block;
     width: 100%;
     height: 100%;
@@ -1548,12 +1544,66 @@ text {
 #react .reactCon .listImg{
     width: 800px;
     height: 480px;
-    background: url(../img/todolist/reactToDoList2.png) no-repeat;
+    background: url('../img/todolist/reactToDoList2.png') no-repeat;
     background-size: cover;
     background-position: center;
     border-radius: 20px;
     border: 1px solid #eee;
+    position: relative;
 }
+#react .reactCon .listImgHover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    transition: opacity 0.7s ease-in-out;
+    opacity: 0;
+    border-radius: 20px;
+    color: #fff;
+    padding: 120px 75px 100px 75px;
+}
+#react .reactCon .listImgHover h4{
+    font-size: 30px;
+}
+#react .reactCon .listImgHover p{
+    margin: 40px 0 40px 0;
+    font-size: 18px;
+    line-height: 30px;
+}
+#react .reactCon .listImgHover a{
+    display: flex;
+    width: 143px;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    margin: 0 auto;
+    font-size: 13px;
+    border: 1px solid #fff;
+    padding: 9px 18px;
+    border-radius: 20px;
+    position: relative;
+    transition: all 0.6s;
+}
+#react .reactCon .listImgHover a:hover span{
+    transform: translateX(5px);
+}
+#react .reactCon .listImgHover a:hover{
+    background: #fff;
+    color: #222;
+}
+#react .reactCon .listImgHover a span{
+    position: absolute;
+    top: 2px;
+    left: 104px;
+    font-size: 17px;
+    transition: all 0.6s;
+}
+#react .reactCon .listImg:hover .listImgHover{
+    opacity: 1;
+}
+
 #react .listInfo{
     width: 450px;
     text-align: left;
@@ -1644,6 +1694,7 @@ text {
     display: flex;
     flex-flow: row wrap;
     width: 100%;
+    row-gap: 5px;
 }
 #react .siteInfo dl dt{
     width: 30%;
@@ -1920,6 +1971,77 @@ img.mfp-img{
 
 /* 푸터 부분 */
 #ending{
-    padding: 300px 0 153px 0;
+    padding: 111px 0 100px 0;
 }
 .footer{}
+#ending .footerWrap1{
+    width: 1400px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+#ending .footerWrap2{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    background: #ccc;
+}
+#ending .footerWrap2 .myInfoGroup > ul{
+    display: flex;
+    justify-content: space-around;
+}
+#ending{}
+#ending{}
+#ending{}
+#ending{}
+#ending{}
+#ending h2::after{
+    content: "08";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    font-size: 3.8em;
+    transform: translate(-76%, -54%);
+    background: linear-gradient(90deg, #f8be67 0%, #ee6290 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: -1;
+    letter-spacing: -2px;
+}
+/* 움직이는 텍스트 */
+#ending .animated-title {
+    font-size: 80px; 
+    font-family:'Raleway',Sans-serif; 
+    font-weight: 700; 
+    position: relative; 
+    width: 100%;
+    max-width:100%;
+    color: #ccc;
+    height: 170px; 
+    /* padding:100px 0; */
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#ending .animated-title:hover{
+    color: #8988ff;
+}
+#ending .animated-title .track {
+    position: absolute; 
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 60s linear infinite; 
+}
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+@media (hover: hover) and (min-width: 700px){
+#ending .animated-title .content {-webkit-transform: translateY(calc(100% - 8rem)); transform: translateY(calc(100% - 8rem));}
+}
+#ending .copyright{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+}
+#ending{}

@@ -1,6 +1,7 @@
 /*가장 기본적인 css들 적는 곳(폰트, 폰트크기, :hover 같은 간단한거 적을 때 하기)*/
 body{
     font-family: 'Noto Sans KR', sans-serif;
+    cursor: url('../img/couser/couser2.png'), auto;
     /* font-size: 1em;
     color: rgb(45, 45, 45); */
 }
@@ -125,19 +126,20 @@ section{
 .ani_on{
 	animation: fadeIn 0.3s 0.3s both;
 }
-.cursor{
-	position: fixed;
-	width: 40px; 
-	height: 40px; 
-	border-radius: 50%; 
-	transform: translate(-50%, -50%);
-	z-index: 999;
-	opacity: 0;
-	/* mix-blend-mode: soft-light; */
-	/* transition: width 0.5s, height 0.5s; */
-	background-color: lightsalmon;
-	pointer-events: none;
-}
+/* .cursor{
+    position:absolute;
+    top:0;
+    left: 0;
+    z-index: 9999;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    opacity: 0;
+    background-color: lightsalmon;
+    transform:translate(-50%, -50%);
+    pointer-events: none;
+} */
+
 
 
 
@@ -1971,29 +1973,107 @@ img.mfp-img{
 
 /* 푸터 부분 */
 #ending{
-    padding: 111px 0 100px 0;
+    padding: 100px 0 100px 0;
 }
-.footer{}
 #ending .footerWrap1{
     width: 1400px;
     margin: 0 auto;
-    padding-bottom: 80px;
+    padding-bottom: 25px;
 }
 #ending .footerWrap2{
     width: 100%;
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
-    background: #ccc;
+    /* background: #ccc; */
 }
-#ending .footerWrap2 .myInfoGroup > ul{
+#ending .footerWrap2 .myInfoGroup{
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
-#ending{}
-#ending{}
-#ending{}
-#ending{}
-#ending{}
+#ending .qrcode{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 22px 30px;
+    background: #f3f3f3;
+    transition: all 0.6s ease;
+}
+#ending .qrcode:hover{
+    background: #365fa0;
+}
+#ending .qrcode:hover p{
+    color: #fff;
+}
+#ending .qrcode p{
+    font-size: 22px;
+    color: #111;
+    font-weight: 600;
+    margin: 0;
+}
+#ending .thankInfo{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    gap: 15px;
+}
+#ending .thankInfo li{
+    line-height: 25px;
+    font-size: 20px;
+    color: #111;
+    font-weight: 600;
+}
+#ending .emailGroup a{
+    display: block;
+    padding: 10px 10px;
+    width: 180px;
+    text-align: center;
+    border: 1px solid #222;
+    font-size: 16px;
+    color: #111;
+    transition: all 0.4s;
+    font-weight: 700;
+}
+#ending .emailGroup a:hover{
+    background: #fff;
+    color: #111;
+    border-color: #fff;
+}
+#ending .thankGroup > ul{
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    /* height: 363px; */
+    gap: 40px;
+    justify-content: center;
+    margin-bottom: 0;
+}
+#ending .thankGroup .emailGroup{
+    padding: 35px 25px;
+    width: 520px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background: #f3f3f3;
+    transition: all 0.6s ease;
+}
+#ending .thankGroup .emailGroup:hover{
+    background: linear-gradient(90deg, #f8be67 0%, #ee6290 100%);
+    background-blend-mode: hard-light;
+}
+
+#ending .thankGroup .infoEmail{
+    font-size: 30px;
+    color: #111;
+    font-weight: 500;
+    transition: all 0.6s ease;
+}
+#ending .thankGroup:hover .infoEmail{
+    color: #fff;
+}
 #ending h2::after{
     content: "08";
     position: absolute;
@@ -2009,14 +2089,14 @@ img.mfp-img{
     letter-spacing: -2px;
 }
 /* 움직이는 텍스트 */
-#ending .animated-title {
-    font-size: 80px; 
+#ending .animated-title{
+    font-size: 75px; 
     font-family:'Raleway',Sans-serif; 
-    font-weight: 700; 
+    font-weight: 600; 
     position: relative; 
     width: 100%;
-    max-width:100%;
-    color: #ccc;
+    max-width: 100%;
+    color: #ddd;
     height: 170px; 
     /* padding:100px 0; */
     overflow-x: hidden;
@@ -2025,13 +2105,13 @@ img.mfp-img{
 #ending .animated-title:hover{
     color: #8988ff;
 }
-#ending .animated-title .track {
+#ending .animated-title .track{
     position: absolute; 
     white-space: nowrap;
     will-change: transform;
     animation: marquee 60s linear infinite; 
 }
-@keyframes marquee {
+@keyframes marquee{
     from { transform: translateX(0); }
     to { transform: translateX(-50%); }
 }
@@ -2040,8 +2120,21 @@ img.mfp-img{
 }
 #ending .copyright{
     width: 100%;
-    max-width: 1400px;
     margin: 0 auto;
     text-align: center;
+    background: #555;
+    padding: 33px;
 }
+#ending .copyGroup{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+#ending .copyGroup .copyText{
+    margin: 0;
+    color: #fff;
+    font-size: 14px;
+}
+#ending{}
+#ending{}
 #ending{}

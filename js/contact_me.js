@@ -69,15 +69,5 @@ $('#name').focus(function() {
     $('#success').html('');
 });
 
-//마우스 커서
-const circle = document.querySelector('.cursor') 
-console.log(circle)
-let mouseX
-let mouseY
-window.addEventListener('mousemove',function(e){
-    mouseX = e.clientX
-    mouseY = e.clientY
-    circle.style.left = mouseX+'px'
-    circle.style.top = mouseY+'px'
-});
+
 

@@ -1,5 +1,15 @@
 $(function(){
 
+    $(document).mousemove(function(e){
+        var mouseX = e.pageX;
+        var mouseY = e.pageY;
+
+        $('.cursor').css({
+            left: mouseX + "px",
+            top : mouseY + "px"
+        })
+    })
+
     'use strict';
     
     var $window = $(window);
@@ -123,7 +133,7 @@ $(function(){
         observerParents :true
         });
         
-        // 리객트 프로젝트 슬라이드
+        // 리액트 프로젝트 슬라이드
         var swiper = new Swiper("#react .mySwiper", {
             slidesPerView: 1,
             spaceBetween: 30,

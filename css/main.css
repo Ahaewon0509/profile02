@@ -465,13 +465,7 @@ header .intro-content .titGroup04 > p{
     bottom: 50px;
     right: 50px;
     cursor: pointer;
-    z-index: 9;
-}
-.goToTop a {
-    width: 60px;
-    height: 60px;
-    padding-top: 16px;
-    font-size: 1em;
+    z-index: 999;
 }
 .goToTop a {
     position: absolute;
@@ -1491,7 +1485,7 @@ text {
 
 /* 리액트 */
 #react{
-    background: #fff;
+    background: #f9f9f9;
     padding: 145px 0;
 }
 #react .listWrap{
@@ -1754,8 +1748,17 @@ text {
     top: 40%;
     left: 96%;
 }
-
 #react .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet:nth-child(1){
+    width: 55px;
+    height: 55px;
+    background: url(../img/reactShoping/icon2.png) no-repeat;
+    background-size: 47px;
+    background-position: 2px 2px;
+    opacity: 1;
+    border: 2px dashed #ccc;
+    transition: 0.4s;
+}
+#react .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet:nth-child(2){
     width: 55px;
     height: 55px;
     background: url(../img/reactShoping/icon1.png) no-repeat;
@@ -1771,23 +1774,10 @@ text {
 #react .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet:nth-child(2):hover{
     border-color: #ee6290;
 }
-#react .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet:nth-child(2){
-    width: 55px;
-    height: 55px;
-    background: url(../img/reactShoping/icon2.png) no-repeat;
-    background-size: 47px;
-    background-position: 2px 2px;
-    opacity: 1;
-    border: 2px dashed #ccc;
-    transition: 0.4s;
-}
-#react{}
-#react{}
-#react{}
 
 /* 디자인 작업 */
 #design{
-    background: #eee;
+    background: #fff;
     padding: 145px 0;
 }
 #design .listWrap{
@@ -1842,7 +1832,8 @@ text {
 #design .designGroup .poster03 ul > li,
 #design .designGroup .poster04 ul > li{
     width: 345px;
-    /* height: 300px; */
+    border-radius: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 #design .designGroup .portfolio-wrapper img{
     width: 100%;

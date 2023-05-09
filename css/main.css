@@ -252,13 +252,6 @@ header .intro-content .titGroup04 > p{
 #page-top .navbar-inverse .navbar-nav > li > a{
     border-radius: 50% !important;
 }
-#page-top{}
-#page-top{}
-#page-top{}
-#page-top{}
-#page-top{}
-
-
 
 /* 햄버거 메뉴 */
 .navigation__checkbox{
@@ -465,7 +458,7 @@ header .intro-content .titGroup04 > p{
     bottom: 50px;
     right: 50px;
     cursor: pointer;
-    z-index: 999;
+    z-index: 99;
 }
 .goToTop a {
     position: absolute;

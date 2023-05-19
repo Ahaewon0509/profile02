@@ -146,5 +146,10 @@ $(function(){
             },
             observer : true, //옵션
             observerParents :true
-            });
+        });
+
+        // 화면 최적화 알림 팝업
+        $('#popUp .popUpClose').on('click', function(){
+            $("#popUp").hide();
+        });
     });

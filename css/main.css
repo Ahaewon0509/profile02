@@ -1,13 +1,20 @@
 /*가장 기본적인 css들 적는 곳(폰트, 폰트크기, :hover 같은 간단한거 적을 때 하기)*/
 body{
     font-family: 'Noto Sans KR', sans-serif;
-    cursor: url('../img/couser/couser2.png'), auto;
+    /* cursor: url('../img/couser/couser2.png'), auto; */
     /* font-size: 1em;
     color: rgb(45, 45, 45); */
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
 }
 ul,ol,dl{
     list-style: none;
 }
+
+/*스크롤바*/
+/* ::-webkit-scrollbar {
+    display: none;
+} */
 
 
 /* 스노우 배경 */
@@ -126,22 +133,20 @@ section{
 .ani_on{
 	animation: fadeIn 0.3s 0.3s both;
 }
-/* .cursor{
-    position:absolute;
-    top:0;
+.cursor{
+    position: absolute;
+    top: 0;
     left: 0;
-    z-index: 9999;
+    z-index: 99999;
     width: 40px;
     height: 40px;
     border-radius: 50%;
     opacity: 0;
-    background-color: lightsalmon;
+    background-color: #8988ff;
     transform:translate(-50%, -50%);
     pointer-events: none;
-} */
-
-
-
+    mix-blend-mode: multiply;
+}
 
 /*메인 제목 부분*/
 .logoDi {
@@ -173,9 +178,8 @@ section{
 	margin-top: 12px;
 	font-family: 'Gowun Dodum', sans-serif;
 } */
+
 /*메인텍스트*/
-.mainTxt{}
-.mainTxt{}
 header .intro-content{
     width: 100% !important;
     height: 65% !important;
@@ -406,8 +410,8 @@ header .intro-content .titGroup04 > p{
     display: inline-block; 
     margin: 6px;
     font-size: 0;
-    width: 7px;
-    height: 7px;
+    width: 10px;
+    height: 10px;
     background: #f8be67;
     border-radius: 50%;
     transition: all 0.3s;
@@ -420,8 +424,8 @@ header .intro-content .titGroup04 > p{
     content: "";
     display: block;
     position: absolute;
-    top: -5px;
-    left: -5px;
+    top: -3px;
+    left: -3px;
     width: 17px;
     height: 17px;
     background: transparent;
@@ -431,6 +435,7 @@ header .intro-content .titGroup04 > p{
 }
 #nav .page{
     position: relative;
+    cursor: pointer;
 }
 #nav span{
     position: absolute;
@@ -438,9 +443,14 @@ header .intro-content .titGroup04 > p{
     left: 3px;
     display: none;
     width: 70px;
-    font-size: 12px;
-    color: #222;
+    font-size: 11px;
+    color: #fff;
     margin-left: 20px;
+    background: #df405a;
+    text-align: center;
+    padding: 3px 5px;
+    line-height: 15px;
+    border-radius: 5px;
 }
 @keyframes rotate_border{
     100%{
@@ -450,6 +460,45 @@ header .intro-content .titGroup04 > p{
 }
 #nav a:hover span{
     display: block;
+}
+#nav a:hover span::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 4px;
+    right: 68px;
+    border: 7px solid transparent;
+    border-right-color: #df405a;
+}
+
+/* 데스크탑 최적화 팝업 부분 */
+#popUp{
+    position: fixed;
+    top: 60px;
+    left: calc(50% - 160px);
+    width: 320px;
+    height: 150px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px 10px;
+    z-index: 99;
+}
+#popUp > .popUpInfo{
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    margin-bottom: 21px;
+}
+#popUp > .popUpClose{
+    display: block;
+    margin: 0 auto;
+    width: 55px;
+    text-align: center;
+    background: #8988ff;
+    color: #fff;
+    padding: 4px 10px;
+    font-size: 14px;
+    border-radius: 5px;
 }
 
 /*탑버튼*/
@@ -672,7 +721,6 @@ text {
     justify-content: space-between;
     align-items: center;
 }
-#about{}
 
 
 /*skill 부분*/
@@ -771,8 +819,6 @@ text {
     margin: 0;
     font-size: 1.1em;
 }
-
-
 
 
 /*cage24 부분*/
@@ -1097,20 +1143,7 @@ text {
     left: 0;
     display: inline-block;
     animation: titBounce 3s ease 0s infinite normal none running;
-    /* font-family: 'Titan One', cursive; */
     font-size: 60px;
-    /* color: #FFF; */
-    /* text-shadow: 0 10px 10px rgba(0, 0, 0, .2); */
-    /* text-shadow: 0 1px 0 #e3e3e3,
-                    0 2px 0 #e3e3e3,
-                    0 3px 0 #e3e3e3,
-                    0 4px 0 #e3e3e3,
-                    0 5px 0 #e3e3e3,
-                    0 6px 0 transparent,
-                    0 7px 0 transparent,
-                    0 8px 0 transparent,
-                    0 9px 0 transparent,
-                    0 10px 10px rgba(0, 0, 0, .2); */
 }
 .titAni span:nth-of-type(1) { animation-delay: 0.3s; }
 .titAni span:nth-of-type(2) { animation-delay: 0.6s; }
@@ -1123,7 +1156,6 @@ text {
 .titAni span:nth-of-type(9) { animation-delay: 2.7s; }
 .titAni span:nth-of-type(10) { animation-delay: 3s; }
 .titAni span:nth-of-type(11) { animation-delay: 3.3s; }
-
 
 @keyframes titBounce{
     0%{
@@ -1145,21 +1177,6 @@ text {
         top: 0px;
     }
 }
-/* @keyframes bounce {
-100% {
-    top: -7px;
-    text-shadow: 0 1px 0 #CCC,
-                0 2px 0 #CCC,
-                0 3px 0 #CCC,
-                0 4px 0 #CCC,
-                0 5px 0 #CCC,
-                0 6px 0 #CCC,
-                0 7px 0 #CCC,
-                0 8px 0 #CCC,
-                0 9px 0 #CCC,
-                0 50px 25px rgba(0, 0, 0, .2);
-}
-} */
 
 
 #reSite h2::after{
@@ -1402,7 +1419,7 @@ text {
     width: 800px;
     height: 480px;
     /* background: #ccc; */
-    background: url('../img/todolist/todo_list2.png') no-repeat;
+    background: url('../img/todolist/todo_list.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     border-radius: 20px;
@@ -1807,7 +1824,7 @@ text {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
-    padding-top: 3%;
+    padding-top: 2%;
 }
 
 #design .designGroup .poster01 ul,
@@ -1956,26 +1973,26 @@ img.mfp-img{
 }
 
 /* 푸터 부분 */
-#ending{
+#contact{
     padding: 100px 0 100px 0;
 }
-#ending .footerWrap1{
+#contact .footerWrap1{
     width: 1400px;
     margin: 0 auto;
     padding-bottom: 25px;
 }
-#ending .footerWrap2{
+#contact .footerWrap2{
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     /* background: #ccc; */
 }
-#ending .footerWrap2 .myInfoGroup{
+#contact .footerWrap2 .myInfoGroup{
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-#ending .qrcode{
+#contact .qrcode{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1984,31 +2001,34 @@ img.mfp-img{
     background: #f3f3f3;
     transition: all 0.6s ease;
 }
-#ending .qrcode:hover{
+#contact .qrcode:hover{
     background: #365fa0;
 }
-#ending .qrcode:hover p{
+#contact .qrcode:hover p{
     color: #fff;
 }
-#ending .qrcode p{
+#contact .qrcode a{
+    display: block;
+}
+#contact .qrcode p{
     font-size: 22px;
     color: #111;
     font-weight: 600;
     margin: 0;
 }
-#ending .thankInfo{
+#contact .thankInfo{
     display: flex;
     flex-direction: column;
     padding-left: 0;
     gap: 15px;
 }
-#ending .thankInfo li{
+#contact .thankInfo li{
     line-height: 25px;
     font-size: 20px;
     color: #111;
     font-weight: 600;
 }
-#ending .emailGroup a{
+#contact .emailGroup a{
     display: block;
     padding: 10px 10px;
     width: 180px;
@@ -2019,12 +2039,12 @@ img.mfp-img{
     transition: all 0.4s;
     font-weight: 700;
 }
-#ending .emailGroup a:hover{
+#contact .emailGroup a:hover{
     background: #fff;
     color: #111;
     border-color: #fff;
 }
-#ending .thankGroup > ul{
+#contact .thankGroup > ul{
     padding-left: 0;
     display: flex;
     flex-direction: column;
@@ -2033,7 +2053,7 @@ img.mfp-img{
     justify-content: center;
     margin-bottom: 0;
 }
-#ending .thankGroup .emailGroup{
+#contact .thankGroup .emailGroup{
     padding: 35px 25px;
     width: 520px;
     text-align: center;
@@ -2044,21 +2064,21 @@ img.mfp-img{
     background: #f3f3f3;
     transition: all 0.6s ease;
 }
-#ending .thankGroup .emailGroup:hover{
+#contact .thankGroup .emailGroup:hover{
     background: linear-gradient(90deg, #f8be67 0%, #ee6290 100%);
     background-blend-mode: hard-light;
 }
 
-#ending .thankGroup .infoEmail{
+#contact .thankGroup .infoEmail{
     font-size: 30px;
     color: #111;
     font-weight: 500;
     transition: all 0.6s ease;
 }
-#ending .thankGroup:hover .infoEmail{
+#contact .thankGroup:hover .infoEmail{
     color: #fff;
 }
-#ending h2::after{
+#contact h2::after{
     content: "08";
     position: absolute;
     top: 0;
@@ -2073,7 +2093,7 @@ img.mfp-img{
     letter-spacing: -2px;
 }
 /* 움직이는 텍스트 */
-#ending .animated-title{
+#contact .animated-title{
     font-size: 75px; 
     font-family:'Raleway',Sans-serif; 
     font-weight: 600; 
@@ -2086,10 +2106,10 @@ img.mfp-img{
     overflow-x: hidden;
     overflow-y: hidden;
 }
-#ending .animated-title:hover{
+#contact .animated-title:hover{
     color: #8988ff;
 }
-#ending .animated-title .track{
+#contact .animated-title .track{
     position: absolute; 
     white-space: nowrap;
     will-change: transform;
@@ -2100,25 +2120,23 @@ img.mfp-img{
     to { transform: translateX(-50%); }
 }
 @media (hover: hover) and (min-width: 700px){
-#ending .animated-title .content {-webkit-transform: translateY(calc(100% - 8rem)); transform: translateY(calc(100% - 8rem));}
+#contact .animated-title .content {-webkit-transform: translateY(calc(100% - 8rem)); transform: translateY(calc(100% - 8rem));}
 }
-#ending .copyright{
+#contact .copyright{
     width: 100%;
     margin: 0 auto;
     text-align: center;
     background: #555;
     padding: 33px;
 }
-#ending .copyGroup{
+#contact .copyGroup{
     display: flex;
     flex-direction: column;
     gap: 7px;
 }
-#ending .copyGroup .copyText{
+#contact .copyGroup .copyText{
     margin: 0;
     color: #fff;
     font-size: 14px;
 }
-#ending{}
-#ending{}
-#ending{}
+

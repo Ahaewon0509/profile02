@@ -4,8 +4,11 @@ body{
     /* cursor: url('../img/couser/couser2.png'), auto; */
     /* font-size: 1em;
     color: rgb(45, 45, 45); */
-    overflow-x: hidden;
+    /* overflow-x를 사용하면 마우스커서가 가로값을 벗어나면, 아래스크롤바가 없어졌지만, 
+    a링크 클릭시에 이미지들이 나오는 부분들이 메인페이지로 이동해서 나와서 주석으로 처리해 놓음*/
+    /* overflow-x: hidden; */
     /* overflow-y: hidden; */
+    cursor: none;
 }
 ul,ol,dl{
     list-style: none;
@@ -482,6 +485,7 @@ header .intro-content .titGroup04 > p{
     border-radius: 10px;
     padding: 30px 10px;
     z-index: 99;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 #popUp > .popUpInfo{
     font-size: 16px;
@@ -656,7 +660,7 @@ text {
 }
 #about .about-content h3{
     margin: 0;
-    margin-bottom: 9px;
+    margin-bottom: 12px;
 }
 #about .about-content p{
     margin: 0;
@@ -680,7 +684,7 @@ text {
 }
 #about .about-content01 h3{
     margin: 0;
-    margin-bottom: 0;
+    margin-bottom: 6px;
 }
 #about .about-content01 > ul{
     display: flex;
@@ -804,6 +808,10 @@ text {
 #about .skill-content{
     text-align: left;
 }
+#about .skill-content h3{
+    margin: 0;
+    margin-bottom: 12px;
+}
 #about .skill-content ul{
     display: flex;
     flex-flow: column nowrap;
@@ -843,14 +851,17 @@ text {
 
 
 #cafe .siteInfo .siteImg .img:hover{
-    animation: siteScroll 12s ease infinite;
+    animation: siteScroll 30s ease infinite;
 }
 @keyframes siteScroll {
     0% {
     background-position-y: 0;
 }
+    50%{
+        background-position-y: 100%;
+    }
 100% {
-    background-position-y: 100%;
+    background-position-y: 0;
 }
 
 }
@@ -964,14 +975,17 @@ text {
 }
 
 #hardCoding .siteInfo .siteImg .img:hover{
-    animation: siteScroll 12s ease infinite;
+    animation: siteScroll 20s ease infinite;
 }
 @keyframes siteScroll {
     0% {
     background-position-y: 0;
 }
+    50%{
+        background-position-y: 100%;
+    }
 100% {
-    background-position-y: 100%;
+    background-position-y: 0;
 }
 }
 
@@ -1198,7 +1212,7 @@ text {
     /* background-color: lightblue; */
 }
 #reSite .slick-slider{
-    padding: 50px 0;
+    padding: 30px 0;
 }
 /* 그룹1 */
 #reSite .single-item .resiteGroup1{
@@ -1213,14 +1227,17 @@ text {
     border-radius: 20px;
 }
 #reSite .single-item .resiteGroup1 .resiteImg:hover{
-    animation: resiteScroll 13s ease infinite;
+    animation: resiteScroll 15s ease infinite;
 }
 @keyframes resiteScroll {
     0% {
     background-position-y: 0;
 }
+    50%{
+        background-position-y: 100%;
+    }
 100% {
-    background-position-y: 100%;
+    background-position-y: 0;
 }
 }
 /* 그룹2 */
@@ -1236,7 +1253,7 @@ text {
     border-radius: 20px;
 }
 #reSite .single-item .resiteGroup2 .resiteImg:hover{
-    animation: resiteScroll 13s ease infinite;
+    animation: resiteScroll 15s ease infinite;
 }
 /* 그룹 3 */
 #reSite .single-item .resiteGroup3{
@@ -1252,7 +1269,7 @@ text {
     border-radius: 20px;
 }
 #reSite .single-item .resiteGroup3 .resiteImg:hover{
-    animation: resiteScroll 13s ease infinite;
+    animation: resiteScroll 30s ease infinite;
 }
 #reSite .textBtnGroup1,
 #reSite .textBtnGroup2,
@@ -1357,10 +1374,55 @@ text {
     font-size: 15px;
     color: #222;
     font-weight: 700;
+    display: block;
 }
 #reSite .slick-next:hover:before{
     color: #fff;
     transition: all 0.6s ease;
+}
+#reSite .slick-next::after{
+    content: "see more";
+    display: block;
+    position: absolute;
+    top: 77px;
+    left: -20px;
+    padding: 5px;
+    width: 100px;
+    height: 33px;
+    background: #fff;
+    color: #000;
+    z-index: 9999;
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 10px;
+    transition: all 0.6s;
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+#reSite .slick-next:hover::after{
+    display: block;
+}
+#reSite .slick-prev::after{
+    content: "previous view";
+    display: block;
+    position: absolute;
+    top: 77px;
+    left: -20px;
+    padding: 5px;
+    width: 100px;
+    height: 53px;
+    background: #fff;
+    color: #000;
+    z-index: 9999;
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 10px;
+    transition: all 0.6s;
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+#reSite .slick-prev:hover::after{
+    display: block;
 }
 #reSite .reBtn{
     text-decoration: none;
@@ -1667,7 +1729,7 @@ text {
 #react .reactCon2 .siteImg{
     width: 800px;
     height: 480px;
-    background: url(../img/reactShoping/main_page.png) no-repeat;
+    background: url('../img/reactShoping/main_page.png') no-repeat;
     background-size: cover;
     background-position: top;
     border-radius: 20px;
@@ -1761,7 +1823,7 @@ text {
 #react .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet:nth-child(1){
     width: 55px;
     height: 55px;
-    background: url(../img/reactShoping/icon2.png) no-repeat;
+    background: url('../img/reactShoping/icon2.png') no-repeat;
     background-size: 47px;
     background-position: 2px 2px;
     opacity: 1;
@@ -1771,9 +1833,9 @@ text {
 #react .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet:nth-child(2){
     width: 55px;
     height: 55px;
-    background: url(../img/reactShoping/icon1.png) no-repeat;
-    background-size: 42px;
-    background-position: 5px 6px;
+    background: url('../img/reactShoping/icon3.png') no-repeat;
+    background-size: 33px;
+    background-position: 9px 6px;
     border: 2px dashed #ccc;
     opacity: 1;
     transition: 0.4s;

@@ -19,7 +19,6 @@ ul,ol,dl{
     display: none;
 } */
 
-
 /* 스노우 배경 */
 /* Snow background */
 
@@ -82,7 +81,6 @@ ul,ol,dl{
         background-position: 500px 1000px, 200px 400px, -100px 300px;
     }
 }
-
 
 
 /*메인 배너 부분*/
@@ -249,9 +247,6 @@ header .intro-content .titGroup04 > p{
 }
 
 /*메뉴 부분*/
-#page-top nav{
-	border-bottom: 1px solid #ffffff47;
-}
 .navbar-inverse .navbar-nav > li > a{
 	font-size: 1.5em;
 	font-family: 'Lobster', cursive;
@@ -575,7 +570,6 @@ text {
     }
 } */
 
-
 /*about부분*/
 #about{
 	background: #fff;
@@ -845,10 +839,9 @@ text {
     height: 500px;
     /* border-radius: 10px; */
     position: relative;
-    border: 1px solid #eee;
+    border: 1px solid #e1e1e1;
     border-radius: 20px;
 }
-
 
 #cafe .siteInfo .siteImg .img:hover{
     animation: siteScroll 30s ease infinite;
@@ -930,7 +923,6 @@ text {
     outline: none;
     margin-top: 13px;
 }
-
 #cafe .button:hover {
     background: linear-gradient(90deg, rgba(248,190,103,1) 0%, rgba(238,98,144,1) 100%);
     /* background-color: #bb91e3; */
@@ -939,11 +931,10 @@ text {
     transform: translateY(-7px);
 }
 
-
 /*하드코딩 부분*/
 #hardCoding{
     background: #fff;
-    padding: 145px 0;
+    padding: 135px 0;
 }
 #hardCoding .tit01{
     text-align: left;
@@ -970,7 +961,7 @@ text {
     height: 500px;
     /* border-radius: 10px; */
     position: relative;
-    border: 1px solid #eee;
+    border: 1px solid #e1e1e1;
     border-radius: 20px;
 }
 
@@ -1139,7 +1130,7 @@ text {
 /*리뉴얼 사이트*/
 #reSite{
     background-color: #f9f9f9;
-    padding: 145px 0;
+    padding: 135px 0;
 }
 #reSite .siteWrap{
     width: 1400px;
@@ -1192,7 +1183,6 @@ text {
     }
 }
 
-
 #reSite h2::after{
     content: "04";
     position: absolute;
@@ -1214,6 +1204,7 @@ text {
 #reSite .slick-slider{
     padding: 30px 0;
 }
+
 /* 그룹1 */
 #reSite .single-item .resiteGroup1{
     height: 480px;
@@ -1223,9 +1214,10 @@ text {
     height: 480px;
     background: url('../img/resiteimg/resite_ssg.png') no-repeat;
     background-size: cover;
-    border: 1px solid #eee;
+    border: 1px solid #e1e1e1;
     border-radius: 20px;
 }
+
 #reSite .single-item .resiteGroup1 .resiteImg:hover{
     animation: resiteScroll 15s ease infinite;
 }
@@ -1240,6 +1232,7 @@ text {
     background-position-y: 0;
 }
 }
+
 /* 그룹2 */
 #reSite .single-item .resiteGroup2{
     height: 480px;
@@ -1249,12 +1242,13 @@ text {
     height: 480px;
     background: url('../img/resiteimg/resite_smoothie3.png') no-repeat;
     background-size: cover;
-    border: 1px solid #eee;
+    border: 1px solid #e1e1e1;
     border-radius: 20px;
 }
 #reSite .single-item .resiteGroup2 .resiteImg:hover{
     animation: resiteScroll 15s ease infinite;
 }
+
 /* 그룹 3 */
 #reSite .single-item .resiteGroup3{
     height: 480px;
@@ -1265,7 +1259,7 @@ text {
     background: url('../img/resiteimg/resite_nasa.png') no-repeat;
     /* background: #ccc; */
     background-size: cover;
-    border: 1px solid #eee;
+    border: 1px solid #e1e1e1;
     border-radius: 20px;
 }
 #reSite .single-item .resiteGroup3 .resiteImg:hover{
@@ -1457,7 +1451,7 @@ text {
 /*todo list 부분*/
 #toDoList{
     background: #fff;
-    padding: 145px 0;
+    padding: 135px 0;
 }
 #toDoList .listWrap{
     width: 1400px;
@@ -1551,14 +1545,11 @@ text {
     color: #fff;
     transform: translateY(-7px);
 }
-#toDoList{}
-#toDoList{}
-#toDoList{}
 
 /* 리액트 */
 #react{
     background: #f9f9f9;
-    padding: 145px 0;
+    padding: 135px 0;
 }
 #react .listWrap{
     width: 1500px;
@@ -1733,7 +1724,7 @@ text {
     background-size: cover;
     background-position: top;
     border-radius: 20px;
-    border: 1px solid #eee;
+    border: 1px solid #e1e1e1;
 }
 #react .reactCon2 .siteImg:hover{
     animation: nikeScroll 15s ease infinite;
@@ -1850,7 +1841,7 @@ text {
 /* 디자인 작업 */
 #design{
     background: #fff;
-    padding: 145px 0;
+    padding: 135px 0;
 }
 #design .listWrap{
     width: 1400px;
@@ -1878,6 +1869,9 @@ text {
     background-size: cover; */
     margin: 0 auto;
 }
+.mfp-bottom-bar .mfp-title{
+    display: none;
+}
 
 /* 디자인 작업한 부분 */
 #design .designGroup{
@@ -1886,7 +1880,7 @@ text {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
-    padding-top: 2%;
+    padding-top: 3%;
 }
 
 #design .designGroup .poster01 ul,
